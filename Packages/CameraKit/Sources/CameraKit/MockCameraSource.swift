@@ -53,7 +53,7 @@ public final class MockCameraSource: CameraSource, @unchecked Sendable {
     public init(capabilities: LensCapabilities = .mockIPhonePro, configuration: Configuration = Configuration()) {
         self.capabilities = capabilities
         self.configuration = configuration
-        self._currentLensID = capabilities.lenses.first?.id
+        self._currentLensID = capabilities.defaultLensID
     }
     
     public func frames() -> AsyncStream<VideoFrame> {
@@ -80,7 +80,8 @@ public final class MockCameraSource: CameraSource, @unchecked Sendable {
     }
     
     public func setZoom(_ factor: Double) async throws {
-        let clampedFactor = max(0.5, min(factor, 15.0))
+        let range = capabilities.supportedZoomRange
+        let clampedFactor = min(max(factor, range.lowerBound), range.upperBound)
         lock.withLock {
             _state.zoomFactor = clampedFactor
         }

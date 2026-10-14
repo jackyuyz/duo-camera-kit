@@ -19,7 +19,10 @@ let package = Package(
         ),
         .testTarget(
             name: "StoreTests",
-            dependencies: ["Store"]
+            dependencies: ["Store"],
+            resources: [
+                .copy("Configuration.storekit")
+            ]
         )
     ]
 )

@@ -65,6 +65,35 @@ public struct LensCapabilities: Codable, Hashable, Sendable {
         self.maxVideo = maxVideo
     }
     
+    /// True when the device has a dedicated telephoto camera.
+    /// Optical zoom requires this; otherwise the UI degrades to digital zoom on wide.
+    public var hasTelephoto: Bool {
+        lenses.contains { $0.kind == .telephoto }
+    }
+    
+    public var telephotoLens: LensOption? {
+        lenses.first { $0.kind == .telephoto }
+    }
+    
+    /// Zoom range from the lenses that are actually present.
+    /// Without telephoto this is ultra-wide/wide only (no 3×/5× optical).
+    public var supportedZoomRange: ClosedRange<Double> {
+        let factors = lenses.flatMap(\.zoomFactors)
+        let minZ = factors.min() ?? 1.0
+        let maxZ = factors.max() ?? 1.0
+        return minZ...max(minZ, maxZ)
+    }
+    
+    public var defaultLensID: String? {
+        telephotoLens?.id ?? lenses.first(where: { $0.kind == .wide })?.id ?? lenses.first?.id
+    }
+    
+    /// User-facing explanation when optical zoom is unavailable.
+    public var missingTelephotoMessage: String? {
+        guard !hasTelephoto else { return nil }
+        return "This iPhone has no telephoto lens. Zoom is digital on the wide camera — still usable as a second angle."
+    }
+    
     /// Mock capabilities for an iPhone Pro with telephoto
     public static let mockIPhonePro = LensCapabilities(
         lenses: [
@@ -75,6 +104,17 @@ public struct LensCapabilities: Codable, Hashable, Sendable {
         proRAW: true,
         proRes: true,
         maxVideo: .hevc4K60
+    )
+    
+    /// Mock capabilities for a non-Pro iPhone (no telephoto, no ProRAW/ProRes)
+    public static let mockIPhone = LensCapabilities(
+        lenses: [
+            LensOption(id: "mock-ultrawide", kind: .ultraWide, zoomFactors: [0.5], displayName: "Ultra Wide"),
+            LensOption(id: "mock-wide", kind: .wide, zoomFactors: [1.0, 2.0], displayName: "Wide")
+        ],
+        proRAW: false,
+        proRes: false,
+        maxVideo: .hevc1080p30
     )
     
     /// Mock capabilities for iPhone Duo (no telephoto)
@@ -118,6 +158,18 @@ public enum VideoFormatOption: String, Codable, Sendable, Equatable, CaseIterabl
         case .proRes422, .proRes422HQ: return true
         default: return false
         }
+    }
+    
+    public var is4K: Bool {
+        switch self {
+        case .hevc4K30, .hevc4K60: return true
+        default: return false
+        }
+    }
+    
+    /// Free-tier maximum (1080p30)
+    public var exceedsFreeTier: Bool {
+        isProRes || is4K || self == .h264_1080p60 || self == .hevc1080p60
     }
 }
 

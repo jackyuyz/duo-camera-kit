@@ -19,6 +19,7 @@ struct LensRolePickerView: View {
             VStack(spacing: 16) {
                 NavigationLink {
                     LensControlView()
+                        .environment(\.deviceRole, .control)
                 } label: {
                     RoleCard(
                         role: .control,
@@ -28,6 +29,7 @@ struct LensRolePickerView: View {
                 
                 NavigationLink {
                     LensDeviceView()
+                        .environment(\.deviceRole, .lens)
                 } label: {
                     RoleCard(
                         role: .lens,

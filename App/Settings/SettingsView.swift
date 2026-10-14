@@ -3,8 +3,14 @@ import Store
 
 struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.storeManager) private var storeManager
+    @Environment(\.deviceRole) private var deviceRole
+    
     @State private var previewQuality = "720p"
-    @State private var autoTransfer = true
+    @State private var autoTransfer = false
+    @State private var hasPro = false
+    
+    private var isLensRole: Bool { deviceRole == .lens }
     
     var body: some View {
         NavigationStack {
@@ -24,18 +30,31 @@ struct SettingsView: View {
                         Text("1080p (High)").tag("1080p")
                     }
                     
-                    Toggle("Auto-transfer Captures", isOn: $autoTransfer)
+                    Toggle("Auto-return originals", isOn: $autoTransfer)
+                        .disabled(!hasPro && !isLensRole)
+                    
+                    if !hasPro && !isLensRole {
+                        Text("Auto-return of full-resolution files is a Pro feature.")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
                 }
                 
-                Section("Purchases") {
-                    NavigationLink {
-                        PaywallView()
-                    } label: {
-                        Label("Camera Kit Pro", systemImage: "star.fill")
-                            .foregroundStyle(.orange)
-                    }
-                    
-                    Button("Restore Purchases") {
+                if !isLensRole {
+                    Section("Purchases") {
+                        NavigationLink {
+                            PaywallView()
+                        } label: {
+                            Label(hasPro ? "Camera Kit Pro (Unlocked)" : "Camera Kit Pro", systemImage: "star.fill")
+                                .foregroundStyle(.orange)
+                        }
+                        
+                        Button("Restore Purchases") {
+                            Task {
+                                try? await storeManager.restorePurchases()
+                                hasPro = await storeManager.hasEntitlement(.pro)
+                            }
+                        }
                     }
                 }
                 
@@ -44,6 +63,13 @@ struct SettingsView: View {
                         Text("Version")
                         Spacer()
                         Text("1.0.0")
+                            .foregroundStyle(.secondary)
+                    }
+                    
+                    HStack {
+                        Text("Minimum iOS")
+                        Spacer()
+                        Text("26.0")
                             .foregroundStyle(.secondary)
                     }
                     
@@ -59,6 +85,10 @@ struct SettingsView: View {
                         dismiss()
                     }
                 }
+            }
+            .task {
+                hasPro = await storeManager.hasEntitlement(.pro)
+                if !hasPro { autoTransfer = false }
             }
         }
     }

@@ -1,0 +1,5 @@
+NSCameraUsageDescription = "Duo Camera Kit 使用相机拍摄照片和视频，包括把这台 iPhone 当作远程镜头时。";
+NSMicrophoneUsageDescription = "录像时录制声音。";
+NSLocalNetworkUsageDescription = "Duo Camera Kit 会直接连接你附近的另一台 iPhone，用来传输取景画面和照片，不经过互联网。";
+NSPhotoLibraryAddUsageDescription = "将拍摄内容保存到照片。";
+CFBundleDisplayName = "Duo 相机套件";

@@ -5,7 +5,11 @@ import Foundation
 
 /// Product identifiers
 public enum ProductID: String, Sendable, CaseIterable {
+    /// Non-consumable, Family Sharing enabled in App Store Connect.
     case pro = "com.jackyu.duocamerakit.pro"
+    
+    /// StoreKit Configuration / App Store Connect display name
+    public var referenceName: String { "Camera Kit Pro" }
 }
 
 /// Feature entitlements
@@ -114,6 +118,8 @@ public struct ProFeatures: Sendable {
     public static let features: [String] = [
         "Full-resolution photos",
         "ProRAW capture",
+        "ProRes video",
+        "Auto-return of originals",
         "4K video transfer",
         "Two-angle sync recording",
         "Long exposure stacking",

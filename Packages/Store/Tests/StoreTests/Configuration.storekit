@@ -1,0 +1,37 @@
+{
+  "identifier" : "A7C3E1F0",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : true,
+      "internalID" : "B2D4F608",
+      "localizations" : [
+        {
+          "description" : "Unlock full-resolution photos, ProRAW, ProRes, and auto-return of originals. One purchase unlocks every device with the same Apple Account.",
+          "displayName" : "Camera Kit Pro",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "解锁全分辨率照片、ProRAW、ProRes 和原片自动传回。一次购买即可在同一 Apple 账户下的所有设备上使用。",
+          "displayName" : "Camera Kit 专业版",
+          "locale" : "zh_Hans"
+        }
+      ],
+      "productID" : "com.jackyu.duocamerakit.pro",
+      "referenceName" : "Camera Kit Pro",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : []
+  },
+  "subscriptionGroups" : [],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

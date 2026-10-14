@@ -1,9 +1,13 @@
 import SwiftUI
 import TripodKit
 import FoldKit
+import Store
 
 struct TripodModePickerView: View {
     @Environment(\.foldStateProvider) private var foldStateProvider
+    @Environment(\.storeManager) private var storeManager
+    @State private var hasPro = false
+    @State private var showPaywall = false
     
     var body: some View {
         ScrollView {
@@ -27,6 +31,12 @@ struct TripodModePickerView: View {
         .background(Color.black)
         .navigationTitle("Tripod Mode")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $showPaywall) {
+            PaywallView()
+        }
+        .task {
+            hasPro = await storeManager.hasEntitlement(.pro)
+        }
     }
     
     private var standAssistantCard: some View {
@@ -75,6 +85,9 @@ struct TripodModePickerView: View {
     
     private func isModeEnabled(_ mode: TripodMode) -> Bool {
         if mode.requiresHinge && !foldStateProvider.state.hasHinge {
+            return false
+        }
+        if mode.requiresPro && !hasPro {
             return false
         }
         return true

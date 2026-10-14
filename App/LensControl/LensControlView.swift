@@ -2,19 +2,32 @@ import SwiftUI
 import LinkKit
 import CameraKit
 import FoldKit
+import Store
 
 struct LensControlView: View {
     @Environment(\.displayContext) private var displayContext
     @Environment(\.foldPosture) private var foldPosture
     @Environment(\.foldRegionInfo) private var foldRegionInfo
+    @Environment(\.storeManager) private var storeManager
     
     @State private var connectionState: ConnectionState = .searching
     @State private var selectedLens: LensOption?
     @State private var zoomFactor: Double = 1.0
     @State private var isRecording = false
     @State private var showPairingSheet = true
+    @State private var hasPro = false
+    @State private var showPaywall = false
     
+    /// Capabilities reported by the paired Lens. Defaults to Pro mock; degrades if no telephoto.
     private let mockCapabilities = LensCapabilities.mockIPhonePro
+    
+    private var zoomRange: ClosedRange<Double> {
+        mockCapabilities.supportedZoomRange
+    }
+    
+    private var capturePolicy: ProCapturePolicy {
+        ProCapturePolicy(isProUnlocked: hasPro)
+    }
     
     var body: some View {
         Group {
@@ -38,6 +51,19 @@ struct LensControlView: View {
                 onConnected: { showPairingSheet = false }
             )
         }
+        .sheet(isPresented: $showPaywall) {
+            PaywallView()
+        }
+        .task {
+            hasPro = await storeManager.hasEntitlement(.pro)
+            if selectedLens == nil {
+                selectedLens = mockCapabilities.lenses.first { $0.id == mockCapabilities.defaultLensID }
+            }
+        }
+        .onAppear {
+            zoomFactor = min(max(zoomFactor, zoomRange.lowerBound), zoomRange.upperBound)
+        }
+        .environment(\.deviceRole, .control)
     }
     
     // MARK: - Outer Display Layout (Closed)
@@ -294,21 +320,55 @@ struct LensControlView: View {
         .clipShape(Capsule())
     }
     
+    @ViewBuilder
+    private var missingTelephotoBanner: some View {
+        if let message = mockCapabilities.missingTelephotoMessage {
+            HStack(alignment: .top, spacing: 8) {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .foregroundStyle(.orange)
+                Text(message)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+            .padding(8)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Color.orange.opacity(0.15))
+            .clipShape(RoundedRectangle(cornerRadius: 8))
+        }
+    }
+    
+    @ViewBuilder
+    private var proCaptureBadge: some View {
+        if !hasPro {
+            Button {
+                showPaywall = true
+            } label: {
+                Text("Full-res, ProRAW, ProRes and auto-return require Pro")
+                    .font(.caption)
+                    .foregroundStyle(.orange)
+            }
+        }
+    }
+    
     private var lensPicker: some View {
-        HStack(spacing: 12) {
-            ForEach(mockCapabilities.lenses) { lens in
-                Button {
-                    selectedLens = lens
-                } label: {
-                    Text(lens.shortLabel)
-                        .font(.subheadline.bold())
-                        .foregroundStyle(selectedLens?.id == lens.id ? .black : .white)
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 8)
-                        .background(selectedLens?.id == lens.id ? Color.accentYellow : Color.gray.opacity(0.3))
-                        .clipShape(Capsule())
+        VStack(spacing: 8) {
+            missingTelephotoBanner
+            HStack(spacing: 12) {
+                ForEach(mockCapabilities.lenses) { lens in
+                    Button {
+                        selectedLens = lens
+                    } label: {
+                        Text(lens.shortLabel)
+                            .font(.subheadline.bold())
+                            .foregroundStyle(selectedLens?.id == lens.id ? .black : .white)
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 8)
+                            .background(selectedLens?.id == lens.id ? Color.accentYellow : Color.gray.opacity(0.3))
+                            .clipShape(Capsule())
+                    }
                 }
             }
+            proCaptureBadge
         }
     }
     
@@ -341,7 +401,7 @@ struct LensControlView: View {
                     .font(.caption.monospaced())
             }
             
-            Slider(value: $zoomFactor, in: 0.5...15.0)
+            Slider(value: $zoomFactor, in: zoomRange)
                 .tint(.accentYellow)
         }
     }

@@ -101,5 +101,7 @@ struct ProFeaturesTests {
     @Test("Pro features list")
     func testFeaturesList() {
         #expect(ProFeatures.features.count >= 5)
+        #expect(ProFeatures.features.contains("ProRes video"))
+        #expect(ProFeatures.features.contains("Auto-return of originals"))
     }
 }

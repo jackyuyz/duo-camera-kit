@@ -75,8 +75,11 @@ public enum PeerUpdate: Sendable {
 
 /// Service type for Duo Camera Kit
 public enum DuoCamKitService {
-    /// Bonjour service type
+    /// Bonjour service type (TCP control + preview)
     public static let serviceType = "_duocamkit._tcp"
+    
+    /// Bonjour service type for optional QUIC/UDP
+    public static let udpServiceType = "_duocamkit._udp"
     
     /// Service domain
     public static let serviceDomain = "local."

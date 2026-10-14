@@ -117,11 +117,14 @@ All packages build and pass tests on Linux:
 - **Library**: `CaptureLibrary` protocol, `MockCaptureLibrary`
 - **Store**: `StoreManager` protocol, `MockStoreManager`, `ProFeatures`
 
-### M2-M8: App Layer (Partial)
-- XcodeGen project configuration
-- SwiftUI views for all main screens
-- Privacy manifest
-- Localization setup
+### M2–M5: Pairing, preview, capture, transfer
+- Network.framework Bonjour `_duocamkit._tcp` / `_duocamkit._udp`, TLS-PSK, reconnect
+- VideoToolbox encoder/decoder (iOS), adaptive bitrate
+- AVFoundation capture with telephoto detection and graceful degrade
+- Chunked resumable transfer + clock sync
+- StoreKit 2 Pro (Family Sharing via `Transaction.currentEntitlements`)
+- Localization en + zh-Hans, Info.plist local network + Bonjour
+- Deployment target **iOS 26.0**; Duo APIs gated `#available(iOS 27.1, *)`
 
 ## Duo Display Specifications
 
@@ -136,12 +139,12 @@ Based on PM research (public, not yet Apple-doc-confirmed):
 
 ### Assumptions (Pending Device Confirmation)
 
-The following values in `DuoDisplay` are assumptions marked in code:
-- **Scale factor**: Assumed 3x (like iPhone Pro Max)
-- **Point dimensions**: Derived from assumed scale (inner: 890×626pt, outer: 466×678pt)
-- **Fold region width**: 8pt (estimated)
-- **Fold safe margin**: 16pt (estimated)
-- **Camera cutout height**: 32pt (estimated)
+Do **not** derive point sizes from panel pixels / 3. The inner screen renders at @3x (2853×2007 px → 951×669 pt landscape) then downsamples to the panel.
+
+- **Runtime**: `UIScreen.main.bounds` + `scale` (logged on launch in DEBUG)
+- **Third-party mock defaults**: inner 951×669 pt, outer 466×678 pt
+- **Fold/crease**: `reservedRegions(kind: .division)` at runtime — 0 width when fully open; mock ~40 pt when half-folded
+- **Safe areas**: read from `GeometryProxy.safeAreaInsets`, never hardcoded
 
 ## Open Questions / Unverified APIs
 

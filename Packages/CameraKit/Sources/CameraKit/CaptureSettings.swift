@@ -31,7 +31,7 @@ public struct VideoSettings: Codable, Sendable, Equatable {
     /// Whether stabilization is enabled
     public var stabilizationEnabled: Bool
     
-    public init(format: VideoFormatOption = .hevc4K30, audioEnabled: Bool = true, stabilizationEnabled: Bool = true) {
+    public init(format: VideoFormatOption = .hevc1080p30, audioEnabled: Bool = true, stabilizationEnabled: Bool = true) {
         self.format = format
         self.audioEnabled = audioEnabled
         self.stabilizationEnabled = stabilizationEnabled

@@ -60,8 +60,10 @@ build/
 timeline.xctimeline
 playground.xcworkspace
 
-# StoreKit testing
+# StoreKit testing (keep Configuration.storekit in the repo)
 *.storekit
+!Configuration.storekit
+!**/Configuration.storekit
 
 # Temporary files
 *.tmp

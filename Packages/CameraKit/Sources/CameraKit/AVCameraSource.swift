@@ -92,7 +92,9 @@ public actor AVCameraSource: NSObject, CameraSource {
     public func setZoom(_ factor: Double) async throws {
         guard let device = currentDevice else { return }
         
-        let clampedFactor = max(1.0, min(factor, Double(device.maxAvailableVideoZoomFactor)))
+        let range = capabilities.supportedZoomRange
+        let deviceMax = Double(device.maxAvailableVideoZoomFactor)
+        let clampedFactor = min(max(factor, range.lowerBound), min(range.upperBound, deviceMax))
         
         try device.lockForConfiguration()
         device.videoZoomFactor = CGFloat(clampedFactor)
@@ -181,7 +183,8 @@ public actor AVCameraSource: NSObject, CameraSource {
         }
         
         device.unlockForConfiguration()
-        state.aeafLocked = locked
+        state.aeLocked = locked
+        state.afLocked = locked
     }
     
     public func capturePhoto(settings: PhotoSettings) async throws -> CapturedPhoto {
@@ -242,11 +245,17 @@ public actor AVCameraSource: NSObject, CameraSource {
     // MARK: - Private Methods
     
     private func discoverDevices() async {
-        let deviceTypes: [AVCaptureDevice.DeviceType] = [
+        var deviceTypes: [AVCaptureDevice.DeviceType] = [
             .builtInWideAngleCamera,
             .builtInUltraWideCamera,
             .builtInTelephotoCamera
         ]
+        
+        // Duo inner/outer ultra-wide are iOS 27.1+. Lens phones on iOS 26 skip these.
+        if #available(iOS 27.1, *) {
+            // TODO(verify-api): AVCaptureDevice.DeviceType.builtInOuterUltraWideCamera
+            // TODO(verify-api): AVCaptureDevice.DeviceType.builtInInnerUltraWideCamera
+        }
         
         let discoverySession = AVCaptureDevice.DiscoverySession(
             deviceTypes: deviceTypes,
@@ -271,7 +280,7 @@ public actor AVCameraSource: NSObject, CameraSource {
             
             var zoomFactors: [Double] = [1.0]
             if device.maxAvailableVideoZoomFactor > 1 {
-                zoomFactors.append(contentsOf: [2.0, 3.0, 5.0].filter { $0 <= device.maxAvailableVideoZoomFactor })
+                zoomFactors.append(contentsOf: [2.0, 3.0, 5.0].filter { $0 <= Double(device.maxAvailableVideoZoomFactor) })
             }
             
             let lens = LensOption(
@@ -282,18 +291,17 @@ public actor AVCameraSource: NSObject, CameraSource {
             )
             lenses.append(lens)
             
-            if #available(iOS 14.3, *) {
-                if device.isAppleProRAWSupported {
-                    hasProRAW = true
-                }
+            if device.isAppleProRAWSupported {
+                hasProRAW = true
             }
         }
         
+        // Non-Pro phones have no telephoto — still usable as a second angle.
         capabilities = LensCapabilities(
             lenses: lenses,
             proRAW: hasProRAW,
             proRes: hasProRes,
-            maxVideo: .hd4K30
+            maxVideo: hasProRes ? .proRes422 : (hasProRAW ? .hevc4K30 : .hevc1080p30)
         )
     }
     
@@ -301,7 +309,11 @@ public actor AVCameraSource: NSObject, CameraSource {
         let session = AVCaptureSession()
         session.sessionPreset = .high
         
-        guard let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) else {
+        let preferredType: AVCaptureDevice.DeviceType = capabilities.hasTelephoto
+            ? .builtInTelephotoCamera
+            : .builtInWideAngleCamera
+        guard let device = AVCaptureDevice.default(preferredType, for: .video, position: .back)
+            ?? AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) else {
             throw CameraError.deviceNotAvailable
         }
         

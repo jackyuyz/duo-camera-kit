@@ -2,8 +2,8 @@ name: DuoCameraKit
 options:
   bundleIdPrefix: com.jackyu
   deploymentTarget:
-    iOS: "17.0"
-  xcodeVersion: "15.0"
+    iOS: "26.0"
+  xcodeVersion: "27.0"
   generateEmptyDirectories: true
 
 settings:
@@ -44,6 +44,9 @@ targets:
       - path: App/Resources/Assets.xcassets
       - path: App/Resources/Localizable.xcstrings
       - path: App/Resources/Fixtures
+      - path: App/Resources/en.lproj
+      - path: App/Resources/zh-Hans.lproj
+      - path: Configuration.storekit
     dependencies:
       - package: FoldKit
       - package: CameraKit
@@ -78,10 +81,13 @@ targets:
         NSPhotoLibraryAddUsageDescription: "Save captures to Photos."
         NSBonjourServices:
           - "_duocamkit._tcp"
+          - "_duocamkit._udp"
         UIBackgroundModes: []
         ITSAppUsesNonExemptEncryption: false
+        LSRequiresIPhoneOS: true
     settings:
       base:
+        IPHONEOS_DEPLOYMENT_TARGET: "26.0"
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
         INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: true
         INFOPLIST_KEY_UIStatusBarStyle: UIStatusBarStyleLightContent

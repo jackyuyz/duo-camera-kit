@@ -10,7 +10,7 @@ struct MockCameraSourceTests {
         let source = MockCameraSource()
         
         #expect(source.capabilities.lenses.count == 3)
-        #expect(source.currentLensID == source.capabilities.lenses.first?.id)
+        #expect(source.currentLensID == source.capabilities.defaultLensID)
         #expect(source.isRecording == false)
     }
     
@@ -62,7 +62,7 @@ struct MockCameraSourceTests {
         #expect(source.state.zoomFactor == 0.5)
         
         try await source.setZoom(100.0)
-        #expect(source.state.zoomFactor == 15.0)
+        #expect(source.state.zoomFactor == source.capabilities.supportedZoomRange.upperBound)
     }
     
     @Test("setFocusPoint updates state")
@@ -231,7 +231,7 @@ struct MockCameraSourceTests {
     func testVideoSettingsDefault() {
         let settings = VideoSettings.default
         
-        #expect(settings.format == .hevc4K30)
+        #expect(settings.format == .hevc1080p30)
         #expect(settings.audioEnabled == true)
         #expect(settings.stabilizationEnabled == true)
     }

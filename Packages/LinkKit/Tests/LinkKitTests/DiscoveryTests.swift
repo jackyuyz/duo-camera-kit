@@ -67,6 +67,7 @@ struct DuoCamKitServiceTests {
     @Test("Service constants")
     func serviceConstants() {
         #expect(DuoCamKitService.serviceType == "_duocamkit._tcp")
+        #expect(DuoCamKitService.udpServiceType == "_duocamkit._udp")
         #expect(DuoCamKitService.serviceDomain == "local.")
         #expect(DuoCamKitService.txtKeyName == "name")
         #expect(DuoCamKitService.txtKeyModel == "model")
