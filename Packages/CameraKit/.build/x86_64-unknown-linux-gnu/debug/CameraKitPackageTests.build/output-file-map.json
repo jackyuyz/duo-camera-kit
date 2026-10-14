@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/master.swiftdeps"
+  },
+  "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.derived/runner.swift": {
+    "dependencies": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/runner.d",
+    "object": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/runner.swiftdeps"
+  }
+}

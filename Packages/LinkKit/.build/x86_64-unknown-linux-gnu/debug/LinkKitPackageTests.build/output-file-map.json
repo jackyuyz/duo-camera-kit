@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/master.swiftdeps"
+  },
+  "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.derived/runner.swift": {
+    "dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/runner.d",
+    "object": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/runner.swiftdeps"
+  }
+}

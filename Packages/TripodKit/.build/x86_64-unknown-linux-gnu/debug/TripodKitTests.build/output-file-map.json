@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/master.swiftdeps"
+  },
+  "/workspace/Packages/TripodKit/Tests/TripodKitTests/TripodKitTests.swift": {
+    "dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/TripodKitTests.d",
+    "object": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/TripodKitTests.swift.o",
+    "swiftmodule": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/TripodKitTests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/TripodKitTests.swiftdeps"
+  }
+}

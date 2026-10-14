@@ -1,0 +1,660 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.xctest",
+      "packagePath" : "/workspace/Packages/Store",
+      "productName" : "StorePackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+    "StorePackageDiscoveredTests"
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Store-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Store.build/sources",
+      "importPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/Sources/Store/Store.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Store.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Store",
+      "moduleOutputPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/Store.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Store.build/Store.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-enable-experimental-feature",
+        "StrictConcurrency",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "store",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Store.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Store.build/Store.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/Store.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/Store/Sources/Store/Store.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Store.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.StorePackageDiscoveredTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/sources",
+      "importPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.derived/StoreTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.derived/all-discovered-tests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/StoreTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "StorePackageDiscoveredTests",
+      "moduleOutputPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/StorePackageDiscoveredTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/StoreTests.swift.o",
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/all-discovered-tests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "store",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/StoreTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/StorePackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.derived/StoreTests.swift",
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.derived/all-discovered-tests.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.StorePackageTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.build/sources",
+      "importPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/StoreTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/StorePackageDiscoveredTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "StorePackageTests",
+      "moduleOutputPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/StorePackageTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "store",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/StorePackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.StoreTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StoreTests.build/sources",
+      "importPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/Tests/StoreTests/StoreTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/Store.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StoreTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "StoreTests",
+      "moduleOutputPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/StoreTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StoreTests.build/StoreTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "store",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StoreTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StoreTests.build/StoreTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/StoreTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/Store/Tests/StoreTests/StoreTests.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StoreTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Store" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "Store",
+      "-package-name",
+      "store",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/Store/Sources/Store/Store.swift",
+      "-I",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-enable-experimental-feature",
+      "StrictConcurrency",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "store",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "StorePackageDiscoveredTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "StorePackageDiscoveredTests",
+      "-package-name",
+      "store",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.derived/StoreTests.swift",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.derived/all-discovered-tests.swift",
+      "-I",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "store",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "StorePackageTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "StorePackageTests",
+      "-package-name",
+      "store",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.derived/runner.swift",
+      "-I",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "store",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "StoreTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "StoreTests",
+      "-package-name",
+      "store",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/Store/Tests/StoreTests/StoreTests.swift",
+      "-I",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "store",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Store" : [
+
+    ],
+    "StorePackageDiscoveredTests" : [
+      "StoreTests",
+      "Store"
+    ],
+    "StorePackageTests" : [
+      "StorePackageDiscoveredTests",
+      "StoreTests",
+      "Store"
+    ],
+    "StoreTests" : [
+      "Store"
+    ]
+  },
+  "testDiscoveryCommands" : {
+    "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.derived/all-discovered-tests.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StoreTests.build/StoreTests.swift.o"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.derived/StoreTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ]
+    }
+  },
+  "testEntryPointCommands" : {
+    "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.derived/runner.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Modules/StorePackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "writeCommands" : {
+    "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Store.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/Sources/Store/Store.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Store.build/sources"
+    },
+    "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.derived/StoreTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/sources"
+    },
+    "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.build/sources"
+    },
+    "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Store.build/Store.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/Store.build/Store.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/StorePackageDiscoveredTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/StoreTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.build/StorePackageTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StoreTests.build/StoreTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StoreTests.build/StoreTests.swiftmodule.o"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StorePackageTests.product/Objects.LinkFileList"
+    },
+    "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StoreTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/Store/Tests/StoreTests/StoreTests.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/StoreTests.build/sources"
+    },
+    "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/Store/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+    }
+  }
+}

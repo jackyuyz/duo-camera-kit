@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/workspace/Packages/Library/.build/x86_64-unknown-linux-gnu/debug/LibraryPackageDiscoveredTests.build/master.swiftdeps"
+  },
+  "/workspace/Packages/Library/.build/x86_64-unknown-linux-gnu/debug/LibraryPackageDiscoveredTests.derived/LibraryTests.swift": {
+    "dependencies": "/workspace/Packages/Library/.build/x86_64-unknown-linux-gnu/debug/LibraryPackageDiscoveredTests.build/LibraryTests.d",
+    "object": "/workspace/Packages/Library/.build/x86_64-unknown-linux-gnu/debug/LibraryPackageDiscoveredTests.build/LibraryTests.swift.o",
+    "swiftmodule": "/workspace/Packages/Library/.build/x86_64-unknown-linux-gnu/debug/LibraryPackageDiscoveredTests.build/LibraryTests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/Library/.build/x86_64-unknown-linux-gnu/debug/LibraryPackageDiscoveredTests.build/LibraryTests.swiftdeps"
+  },
+  "/workspace/Packages/Library/.build/x86_64-unknown-linux-gnu/debug/LibraryPackageDiscoveredTests.derived/all-discovered-tests.swift": {
+    "dependencies": "/workspace/Packages/Library/.build/x86_64-unknown-linux-gnu/debug/LibraryPackageDiscoveredTests.build/all-discovered-tests.d",
+    "object": "/workspace/Packages/Library/.build/x86_64-unknown-linux-gnu/debug/LibraryPackageDiscoveredTests.build/all-discovered-tests.swift.o",
+    "swiftmodule": "/workspace/Packages/Library/.build/x86_64-unknown-linux-gnu/debug/LibraryPackageDiscoveredTests.build/all-discovered-tests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/Library/.build/x86_64-unknown-linux-gnu/debug/LibraryPackageDiscoveredTests.build/all-discovered-tests.swiftdeps"
+  }
+}

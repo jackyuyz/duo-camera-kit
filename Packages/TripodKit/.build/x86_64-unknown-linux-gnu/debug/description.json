@@ -1,0 +1,937 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.xctest",
+      "packagePath" : "/workspace/Packages/TripodKit",
+      "productName" : "TripodKitPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+    "TripodKitPackageDiscoveredTests"
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.FoldKit-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/sources",
+      "importPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/FoldKit/Sources/FoldKit/FoldKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/FoldKit/Sources/FoldKit/FoldState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/FoldKit/Sources/FoldKit/FoldStateProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/FoldKit/Sources/FoldKit/RelativeAngleTracker.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "FoldKit",
+      "moduleOutputPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/FoldKit.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/FoldKit.swift.o",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/FoldState.swift.o",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/FoldStateProvider.swift.o",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/RelativeAngleTracker.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-enable-experimental-feature",
+        "StrictConcurrency",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "foldkit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/FoldKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/FoldState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/FoldStateProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/RelativeAngleTracker.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/FoldKit.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/FoldKit/Sources/FoldKit/FoldKit.swift",
+        "/workspace/Packages/FoldKit/Sources/FoldKit/FoldState.swift",
+        "/workspace/Packages/FoldKit/Sources/FoldKit/FoldStateProvider.swift",
+        "/workspace/Packages/FoldKit/Sources/FoldKit/RelativeAngleTracker.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.TripodKit-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/sources",
+      "importPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Sources/TripodKit/StackingEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Sources/TripodKit/StandAssistant.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Sources/TripodKit/TimelapseScheduler.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Sources/TripodKit/TripodKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Sources/TripodKit/TripodMode.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/FoldKit.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TripodKit",
+      "moduleOutputPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKit.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StackingEngine.swift.o",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StandAssistant.swift.o",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TimelapseScheduler.swift.o",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodKit.swift.o",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodMode.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-enable-experimental-feature",
+        "StrictConcurrency",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "tripodkit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StackingEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StandAssistant.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TimelapseScheduler.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodMode.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKit.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/TripodKit/Sources/TripodKit/StackingEngine.swift",
+        "/workspace/Packages/TripodKit/Sources/TripodKit/StandAssistant.swift",
+        "/workspace/Packages/TripodKit/Sources/TripodKit/TimelapseScheduler.swift",
+        "/workspace/Packages/TripodKit/Sources/TripodKit/TripodKit.swift",
+        "/workspace/Packages/TripodKit/Sources/TripodKit/TripodMode.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.TripodKitPackageDiscoveredTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/sources",
+      "importPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.derived/TripodKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKitTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TripodKitPackageDiscoveredTests",
+      "moduleOutputPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKitPackageDiscoveredTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/TripodKitTests.swift.o",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "tripodkit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/TripodKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKitPackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.derived/TripodKitTests.swift",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.TripodKitPackageTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.build/sources",
+      "importPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKitTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKitPackageDiscoveredTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TripodKitPackageTests",
+      "moduleOutputPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKitPackageTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "tripodkit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKitPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.TripodKitTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/sources",
+      "importPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Tests/TripodKitTests/TripodKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKit.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TripodKitTests",
+      "moduleOutputPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKitTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/TripodKitTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "tripodkit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/TripodKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKitTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/TripodKit/Tests/TripodKitTests/TripodKitTests.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "FoldKit" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "FoldKit",
+      "-package-name",
+      "foldkit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/FoldKit/Sources/FoldKit/FoldKit.swift",
+      "/workspace/Packages/FoldKit/Sources/FoldKit/FoldState.swift",
+      "/workspace/Packages/FoldKit/Sources/FoldKit/FoldStateProvider.swift",
+      "/workspace/Packages/FoldKit/Sources/FoldKit/RelativeAngleTracker.swift",
+      "-I",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-enable-experimental-feature",
+      "StrictConcurrency",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "foldkit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "TripodKit" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "TripodKit",
+      "-package-name",
+      "tripodkit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/TripodKit/Sources/TripodKit/StackingEngine.swift",
+      "/workspace/Packages/TripodKit/Sources/TripodKit/StandAssistant.swift",
+      "/workspace/Packages/TripodKit/Sources/TripodKit/TimelapseScheduler.swift",
+      "/workspace/Packages/TripodKit/Sources/TripodKit/TripodKit.swift",
+      "/workspace/Packages/TripodKit/Sources/TripodKit/TripodMode.swift",
+      "-I",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-enable-experimental-feature",
+      "StrictConcurrency",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "tripodkit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "TripodKitPackageDiscoveredTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "TripodKitPackageDiscoveredTests",
+      "-package-name",
+      "tripodkit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.derived/TripodKitTests.swift",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.derived/all-discovered-tests.swift",
+      "-I",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "tripodkit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "TripodKitPackageTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "TripodKitPackageTests",
+      "-package-name",
+      "tripodkit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.derived/runner.swift",
+      "-I",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "tripodkit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "TripodKitTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "TripodKitTests",
+      "-package-name",
+      "tripodkit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/TripodKit/Tests/TripodKitTests/TripodKitTests.swift",
+      "-I",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "tripodkit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "FoldKit" : [
+
+    ],
+    "TripodKit" : [
+      "FoldKit"
+    ],
+    "TripodKitPackageDiscoveredTests" : [
+      "TripodKitTests",
+      "TripodKit",
+      "FoldKit"
+    ],
+    "TripodKitPackageTests" : [
+      "TripodKitPackageDiscoveredTests",
+      "TripodKitTests",
+      "TripodKit",
+      "FoldKit"
+    ],
+    "TripodKitTests" : [
+      "TripodKit",
+      "FoldKit"
+    ]
+  },
+  "testDiscoveryCommands" : {
+    "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.derived/all-discovered-tests.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/TripodKitTests.swift.o"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.derived/TripodKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ]
+    }
+  },
+  "testEntryPointCommands" : {
+    "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.derived/runner.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/Modules/TripodKitPackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "writeCommands" : {
+    "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/FoldKit/Sources/FoldKit/FoldKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/FoldKit/Sources/FoldKit/FoldState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/FoldKit/Sources/FoldKit/FoldStateProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/FoldKit/Sources/FoldKit/RelativeAngleTracker.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/sources"
+    },
+    "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Sources/TripodKit/StackingEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Sources/TripodKit/StandAssistant.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Sources/TripodKit/TimelapseScheduler.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Sources/TripodKit/TripodKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Sources/TripodKit/TripodMode.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/sources"
+    },
+    "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.derived/TripodKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/sources"
+    },
+    "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.build/sources"
+    },
+    "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/FoldKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/FoldKit.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/FoldState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/FoldStateProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/FoldKit.build/RelativeAngleTracker.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StackingEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StandAssistant.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TimelapseScheduler.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodKit.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodMode.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/TripodKitPackageDiscoveredTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/TripodKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.build/TripodKitPackageTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/TripodKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/TripodKitTests.swiftmodule.o"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitPackageTests.product/Objects.LinkFileList"
+    },
+    "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/TripodKit/Tests/TripodKitTests/TripodKitTests.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKitTests.build/sources"
+    },
+    "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+    }
+  }
+}

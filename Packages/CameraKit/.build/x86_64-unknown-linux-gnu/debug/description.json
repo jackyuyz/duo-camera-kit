@@ -1,0 +1,759 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.xctest",
+      "packagePath" : "/workspace/Packages/CameraKit",
+      "productName" : "CameraKitPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+    "CameraKitPackageDiscoveredTests"
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.CameraKit-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/sources",
+      "importPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CameraKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CameraSource.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CaptureSettings.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/LensOption.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/MockCameraSource.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "CameraKit",
+      "moduleOutputPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKit.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraKit.swift.o",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraSource.swift.o",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CaptureSettings.swift.o",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/LensOption.swift.o",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/MockCameraSource.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-enable-experimental-feature",
+        "StrictConcurrency",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "camerakit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraSource.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CaptureSettings.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/LensOption.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/MockCameraSource.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKit.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/CameraKit/Sources/CameraKit/CameraKit.swift",
+        "/workspace/Packages/CameraKit/Sources/CameraKit/CameraSource.swift",
+        "/workspace/Packages/CameraKit/Sources/CameraKit/CaptureSettings.swift",
+        "/workspace/Packages/CameraKit/Sources/CameraKit/LensOption.swift",
+        "/workspace/Packages/CameraKit/Sources/CameraKit/MockCameraSource.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.CameraKitPackageDiscoveredTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/sources",
+      "importPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.derived/CameraKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKitTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "CameraKitPackageDiscoveredTests",
+      "moduleOutputPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKitPackageDiscoveredTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/CameraKitTests.swift.o",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "camerakit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/CameraKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKitPackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.derived/CameraKitTests.swift",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.CameraKitPackageTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/sources",
+      "importPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKitTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKitPackageDiscoveredTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "CameraKitPackageTests",
+      "moduleOutputPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKitPackageTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "camerakit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKitPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.CameraKitTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/sources",
+      "importPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Tests/CameraKitTests/LensOptionTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Tests/CameraKitTests/MockCameraSourceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKit.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "CameraKitTests",
+      "moduleOutputPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKitTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/LensOptionTests.swift.o",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/MockCameraSourceTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "camerakit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/LensOptionTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/MockCameraSourceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKitTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/CameraKit/Tests/CameraKitTests/LensOptionTests.swift",
+        "/workspace/Packages/CameraKit/Tests/CameraKitTests/MockCameraSourceTests.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "CameraKit" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "CameraKit",
+      "-package-name",
+      "camerakit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/CameraKit/Sources/CameraKit/CameraKit.swift",
+      "/workspace/Packages/CameraKit/Sources/CameraKit/CameraSource.swift",
+      "/workspace/Packages/CameraKit/Sources/CameraKit/CaptureSettings.swift",
+      "/workspace/Packages/CameraKit/Sources/CameraKit/LensOption.swift",
+      "/workspace/Packages/CameraKit/Sources/CameraKit/MockCameraSource.swift",
+      "-I",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-enable-experimental-feature",
+      "StrictConcurrency",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "camerakit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "CameraKitPackageDiscoveredTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "CameraKitPackageDiscoveredTests",
+      "-package-name",
+      "camerakit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.derived/CameraKitTests.swift",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.derived/all-discovered-tests.swift",
+      "-I",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "camerakit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "CameraKitPackageTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "CameraKitPackageTests",
+      "-package-name",
+      "camerakit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.derived/runner.swift",
+      "-I",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "camerakit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "CameraKitTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "CameraKitTests",
+      "-package-name",
+      "camerakit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/CameraKit/Tests/CameraKitTests/LensOptionTests.swift",
+      "/workspace/Packages/CameraKit/Tests/CameraKitTests/MockCameraSourceTests.swift",
+      "-I",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "camerakit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "CameraKit" : [
+
+    ],
+    "CameraKitPackageDiscoveredTests" : [
+      "CameraKitTests",
+      "CameraKit"
+    ],
+    "CameraKitPackageTests" : [
+      "CameraKitPackageDiscoveredTests",
+      "CameraKitTests",
+      "CameraKit"
+    ],
+    "CameraKitTests" : [
+      "CameraKit"
+    ]
+  },
+  "testDiscoveryCommands" : {
+    "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.derived/all-discovered-tests.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/LensOptionTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/MockCameraSourceTests.swift.o"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.derived/CameraKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ]
+    }
+  },
+  "testEntryPointCommands" : {
+    "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.derived/runner.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKitPackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "writeCommands" : {
+    "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CameraKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CameraSource.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CaptureSettings.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/LensOption.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/MockCameraSource.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/sources"
+    },
+    "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.derived/CameraKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/sources"
+    },
+    "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/sources"
+    },
+    "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraKit.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraSource.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CaptureSettings.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/LensOption.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/MockCameraSource.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/CameraKitPackageDiscoveredTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/CameraKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/CameraKitPackageTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/CameraKitTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/LensOptionTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/MockCameraSourceTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitPackageTests.product/Objects.LinkFileList"
+    },
+    "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Tests/CameraKitTests/LensOptionTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Tests/CameraKitTests/MockCameraSourceTests.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/sources"
+    },
+    "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+    }
+  }
+}

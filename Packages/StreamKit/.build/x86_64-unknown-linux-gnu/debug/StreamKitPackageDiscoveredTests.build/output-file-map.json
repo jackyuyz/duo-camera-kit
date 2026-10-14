@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKitPackageDiscoveredTests.build/master.swiftdeps"
+  },
+  "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKitPackageDiscoveredTests.derived/StreamKitTests.swift": {
+    "dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKitPackageDiscoveredTests.build/StreamKitTests.d",
+    "object": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKitPackageDiscoveredTests.build/StreamKitTests.swift.o",
+    "swiftmodule": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKitPackageDiscoveredTests.build/StreamKitTests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKitPackageDiscoveredTests.build/StreamKitTests.swiftdeps"
+  },
+  "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKitPackageDiscoveredTests.derived/all-discovered-tests.swift": {
+    "dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKitPackageDiscoveredTests.build/all-discovered-tests.d",
+    "object": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKitPackageDiscoveredTests.build/all-discovered-tests.swift.o",
+    "swiftmodule": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKitPackageDiscoveredTests.build/all-discovered-tests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKitPackageDiscoveredTests.build/all-discovered-tests.swiftdeps"
+  }
+}

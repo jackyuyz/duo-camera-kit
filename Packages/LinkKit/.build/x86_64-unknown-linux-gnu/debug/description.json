@@ -1,0 +1,1128 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.xctest",
+      "packagePath" : "/workspace/Packages/LinkKit",
+      "productName" : "LinkKitPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+    "LinkKitPackageDiscoveredTests"
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.CameraKit-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/sources",
+      "importPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CameraKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CameraSource.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CaptureSettings.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/LensOption.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/MockCameraSource.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "CameraKit",
+      "moduleOutputPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKit.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraKit.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraSource.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CaptureSettings.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/LensOption.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/MockCameraSource.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-enable-experimental-feature",
+        "StrictConcurrency",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "camerakit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraSource.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CaptureSettings.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/LensOption.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/MockCameraSource.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKit.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/CameraKit/Sources/CameraKit/CameraKit.swift",
+        "/workspace/Packages/CameraKit/Sources/CameraKit/CameraSource.swift",
+        "/workspace/Packages/CameraKit/Sources/CameraKit/CaptureSettings.swift",
+        "/workspace/Packages/CameraKit/Sources/CameraKit/LensOption.swift",
+        "/workspace/Packages/CameraKit/Sources/CameraKit/MockCameraSource.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.LinkKit-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/sources",
+      "importPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/CaptureItem.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/ClockSync.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/ControlMessage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/LinkKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/LoopbackTransport.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/PairingCode.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/PeerInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/Transport.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/CameraKit.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "LinkKit",
+      "moduleOutputPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKit.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/CaptureItem.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/ClockSync.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/ControlMessage.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/LinkKit.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/LoopbackTransport.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/PairingCode.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/PeerInfo.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/Transport.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-enable-experimental-feature",
+        "StrictConcurrency",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "linkkit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/CaptureItem.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/ClockSync.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/ControlMessage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/LinkKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/LoopbackTransport.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/PairingCode.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/PeerInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/Transport.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKit.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/LinkKit/Sources/LinkKit/CaptureItem.swift",
+        "/workspace/Packages/LinkKit/Sources/LinkKit/ClockSync.swift",
+        "/workspace/Packages/LinkKit/Sources/LinkKit/ControlMessage.swift",
+        "/workspace/Packages/LinkKit/Sources/LinkKit/LinkKit.swift",
+        "/workspace/Packages/LinkKit/Sources/LinkKit/LoopbackTransport.swift",
+        "/workspace/Packages/LinkKit/Sources/LinkKit/PairingCode.swift",
+        "/workspace/Packages/LinkKit/Sources/LinkKit/PeerInfo.swift",
+        "/workspace/Packages/LinkKit/Sources/LinkKit/Transport.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.LinkKitPackageDiscoveredTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/sources",
+      "importPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.derived/LinkKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKitTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "LinkKitPackageDiscoveredTests",
+      "moduleOutputPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKitPackageDiscoveredTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/LinkKitTests.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "linkkit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/LinkKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKitPackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.derived/LinkKitTests.swift",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.LinkKitPackageTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/sources",
+      "importPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKitTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKitPackageDiscoveredTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "LinkKitPackageTests",
+      "moduleOutputPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKitPackageTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "linkkit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKitPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.LinkKitTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/sources",
+      "importPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/CaptureItemTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/ClockSyncTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/ControlMessageTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/LoopbackTransportTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/PairingCodeTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/PeerInfoTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKit.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "LinkKitTests",
+      "moduleOutputPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKitTests.swiftmodule",
+      "objects" : [
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/CaptureItemTests.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ClockSyncTests.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ControlMessageTests.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/LoopbackTransportTests.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PairingCodeTests.swift.o",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PeerInfoTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "linkkit",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/CaptureItemTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ClockSyncTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ControlMessageTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/LoopbackTransportTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PairingCodeTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PeerInfoTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKitTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspace/Packages/LinkKit/Tests/LinkKitTests/CaptureItemTests.swift",
+        "/workspace/Packages/LinkKit/Tests/LinkKitTests/ClockSyncTests.swift",
+        "/workspace/Packages/LinkKit/Tests/LinkKitTests/ControlMessageTests.swift",
+        "/workspace/Packages/LinkKit/Tests/LinkKitTests/LoopbackTransportTests.swift",
+        "/workspace/Packages/LinkKit/Tests/LinkKitTests/PairingCodeTests.swift",
+        "/workspace/Packages/LinkKit/Tests/LinkKitTests/PeerInfoTests.swift"
+      ],
+      "tempsPath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "CameraKit" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "CameraKit",
+      "-package-name",
+      "camerakit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/CameraKit/Sources/CameraKit/CameraKit.swift",
+      "/workspace/Packages/CameraKit/Sources/CameraKit/CameraSource.swift",
+      "/workspace/Packages/CameraKit/Sources/CameraKit/CaptureSettings.swift",
+      "/workspace/Packages/CameraKit/Sources/CameraKit/LensOption.swift",
+      "/workspace/Packages/CameraKit/Sources/CameraKit/MockCameraSource.swift",
+      "-I",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-enable-experimental-feature",
+      "StrictConcurrency",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "camerakit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "LinkKit" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "LinkKit",
+      "-package-name",
+      "linkkit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/LinkKit/Sources/LinkKit/CaptureItem.swift",
+      "/workspace/Packages/LinkKit/Sources/LinkKit/ClockSync.swift",
+      "/workspace/Packages/LinkKit/Sources/LinkKit/ControlMessage.swift",
+      "/workspace/Packages/LinkKit/Sources/LinkKit/LinkKit.swift",
+      "/workspace/Packages/LinkKit/Sources/LinkKit/LoopbackTransport.swift",
+      "/workspace/Packages/LinkKit/Sources/LinkKit/PairingCode.swift",
+      "/workspace/Packages/LinkKit/Sources/LinkKit/PeerInfo.swift",
+      "/workspace/Packages/LinkKit/Sources/LinkKit/Transport.swift",
+      "-I",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-enable-experimental-feature",
+      "StrictConcurrency",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "linkkit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "LinkKitPackageDiscoveredTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "LinkKitPackageDiscoveredTests",
+      "-package-name",
+      "linkkit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.derived/LinkKitTests.swift",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.derived/all-discovered-tests.swift",
+      "-I",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "linkkit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "LinkKitPackageTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "LinkKitPackageTests",
+      "-package-name",
+      "linkkit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.derived/runner.swift",
+      "-I",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "linkkit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "LinkKitTests" : [
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "LinkKitTests",
+      "-package-name",
+      "linkkit",
+      "-incremental",
+      "-c",
+      "/workspace/Packages/LinkKit/Tests/LinkKitTests/CaptureItemTests.swift",
+      "/workspace/Packages/LinkKit/Tests/LinkKitTests/ClockSyncTests.swift",
+      "/workspace/Packages/LinkKit/Tests/LinkKitTests/ControlMessageTests.swift",
+      "/workspace/Packages/LinkKit/Tests/LinkKitTests/LoopbackTransportTests.swift",
+      "/workspace/Packages/LinkKit/Tests/LinkKitTests/PairingCodeTests.swift",
+      "/workspace/Packages/LinkKit/Tests/LinkKitTests/PeerInfoTests.swift",
+      "-I",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "linkkit",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "CameraKit" : [
+
+    ],
+    "LinkKit" : [
+      "CameraKit"
+    ],
+    "LinkKitPackageDiscoveredTests" : [
+      "LinkKitTests",
+      "LinkKit",
+      "CameraKit"
+    ],
+    "LinkKitPackageTests" : [
+      "LinkKitPackageDiscoveredTests",
+      "LinkKitTests",
+      "LinkKit",
+      "CameraKit"
+    ],
+    "LinkKitTests" : [
+      "LinkKit",
+      "CameraKit"
+    ]
+  },
+  "testDiscoveryCommands" : {
+    "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.derived/all-discovered-tests.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/CaptureItemTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ClockSyncTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ControlMessageTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/LoopbackTransportTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PairingCodeTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PeerInfoTests.swift.o"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.derived/LinkKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ]
+    }
+  },
+  "testEntryPointCommands" : {
+    "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.derived/runner.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/Modules/LinkKitPackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "writeCommands" : {
+    "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CameraKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CameraSource.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/CaptureSettings.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/LensOption.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/CameraKit/Sources/CameraKit/MockCameraSource.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/sources"
+    },
+    "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/CaptureItem.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/ClockSync.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/ControlMessage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/LinkKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/LoopbackTransport.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/PairingCode.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/PeerInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Sources/LinkKit/Transport.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/sources"
+    },
+    "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.derived/LinkKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/sources"
+    },
+    "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/sources"
+    },
+    "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraKit.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CameraSource.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/CaptureSettings.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/LensOption.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/CameraKit.build/MockCameraSource.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/CaptureItem.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/ClockSync.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/ControlMessage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/LinkKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/LinkKit.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/LoopbackTransport.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/PairingCode.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/PeerInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKit.build/Transport.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/LinkKitPackageDiscoveredTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/LinkKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/LinkKitPackageTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/CaptureItemTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ClockSyncTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ControlMessageTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/LinkKitTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/LoopbackTransportTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PairingCodeTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PeerInfoTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitPackageTests.product/Objects.LinkFileList"
+    },
+    "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/CaptureItemTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/ClockSyncTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/ControlMessageTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/LoopbackTransportTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/PairingCodeTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspace/Packages/LinkKit/Tests/LinkKitTests/PeerInfoTests.swift"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/sources"
+    },
+    "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/opt/swift-6.0.2-RELEASE-ubuntu24.04/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/swift-version--6968A7358BCF2628.txt"
+    }
+  }
+}

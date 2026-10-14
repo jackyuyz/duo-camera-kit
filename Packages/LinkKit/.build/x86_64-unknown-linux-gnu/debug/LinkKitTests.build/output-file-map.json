@@ -1,0 +1,41 @@
+{
+  "": {
+    "swift-dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/master.swiftdeps"
+  },
+  "/workspace/Packages/LinkKit/Tests/LinkKitTests/CaptureItemTests.swift": {
+    "dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/CaptureItemTests.d",
+    "object": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/CaptureItemTests.swift.o",
+    "swiftmodule": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/CaptureItemTests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/CaptureItemTests.swiftdeps"
+  },
+  "/workspace/Packages/LinkKit/Tests/LinkKitTests/ClockSyncTests.swift": {
+    "dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ClockSyncTests.d",
+    "object": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ClockSyncTests.swift.o",
+    "swiftmodule": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ClockSyncTests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ClockSyncTests.swiftdeps"
+  },
+  "/workspace/Packages/LinkKit/Tests/LinkKitTests/ControlMessageTests.swift": {
+    "dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ControlMessageTests.d",
+    "object": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ControlMessageTests.swift.o",
+    "swiftmodule": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ControlMessageTests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/ControlMessageTests.swiftdeps"
+  },
+  "/workspace/Packages/LinkKit/Tests/LinkKitTests/LoopbackTransportTests.swift": {
+    "dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/LoopbackTransportTests.d",
+    "object": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/LoopbackTransportTests.swift.o",
+    "swiftmodule": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/LoopbackTransportTests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/LoopbackTransportTests.swiftdeps"
+  },
+  "/workspace/Packages/LinkKit/Tests/LinkKitTests/PairingCodeTests.swift": {
+    "dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PairingCodeTests.d",
+    "object": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PairingCodeTests.swift.o",
+    "swiftmodule": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PairingCodeTests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PairingCodeTests.swiftdeps"
+  },
+  "/workspace/Packages/LinkKit/Tests/LinkKitTests/PeerInfoTests.swift": {
+    "dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PeerInfoTests.d",
+    "object": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PeerInfoTests.swift.o",
+    "swiftmodule": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PeerInfoTests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/LinkKit/.build/x86_64-unknown-linux-gnu/debug/LinkKitTests.build/PeerInfoTests.swiftdeps"
+  }
+}

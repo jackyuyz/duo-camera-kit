@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/master.swiftdeps"
+  },
+  "/workspace/Packages/StreamKit/Sources/StreamKit/AdaptiveBitrate.swift": {
+    "dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/AdaptiveBitrate.d",
+    "object": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/AdaptiveBitrate.swift.o",
+    "swiftmodule": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/AdaptiveBitrate~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/AdaptiveBitrate.swiftdeps"
+  },
+  "/workspace/Packages/StreamKit/Sources/StreamKit/MockEncoder.swift": {
+    "dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/MockEncoder.d",
+    "object": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/MockEncoder.swift.o",
+    "swiftmodule": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/MockEncoder~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/MockEncoder.swiftdeps"
+  },
+  "/workspace/Packages/StreamKit/Sources/StreamKit/StreamKit.swift": {
+    "dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/StreamKit.d",
+    "object": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/StreamKit.swift.o",
+    "swiftmodule": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/StreamKit~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/StreamKit/.build/x86_64-unknown-linux-gnu/debug/StreamKit.build/StreamKit.swiftdeps"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/master.swiftdeps"
+  },
+  "/workspace/Packages/TripodKit/Sources/TripodKit/StackingEngine.swift": {
+    "dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StackingEngine.d",
+    "object": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StackingEngine.swift.o",
+    "swiftmodule": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StackingEngine~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StackingEngine.swiftdeps"
+  },
+  "/workspace/Packages/TripodKit/Sources/TripodKit/StandAssistant.swift": {
+    "dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StandAssistant.d",
+    "object": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StandAssistant.swift.o",
+    "swiftmodule": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StandAssistant~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/StandAssistant.swiftdeps"
+  },
+  "/workspace/Packages/TripodKit/Sources/TripodKit/TimelapseScheduler.swift": {
+    "dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TimelapseScheduler.d",
+    "object": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TimelapseScheduler.swift.o",
+    "swiftmodule": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TimelapseScheduler~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TimelapseScheduler.swiftdeps"
+  },
+  "/workspace/Packages/TripodKit/Sources/TripodKit/TripodKit.swift": {
+    "dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodKit.d",
+    "object": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodKit.swift.o",
+    "swiftmodule": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodKit~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodKit.swiftdeps"
+  },
+  "/workspace/Packages/TripodKit/Sources/TripodKit/TripodMode.swift": {
+    "dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodMode.d",
+    "object": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodMode.swift.o",
+    "swiftmodule": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodMode~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/TripodKit/.build/x86_64-unknown-linux-gnu/debug/TripodKit.build/TripodMode.swiftdeps"
+  }
+}

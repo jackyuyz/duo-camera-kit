@@ -1,0 +1,24 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "camerakit",
+          "kind" : "fileSystem",
+          "location" : "/workspace/Packages/CameraKit",
+          "name" : "CameraKit"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/workspace/Packages/CameraKit"
+        },
+        "subpath" : "camerakit"
+      }
+    ]
+  },
+  "version" : 6
+}

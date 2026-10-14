@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/master.swiftdeps"
+  },
+  "/workspace/Packages/CameraKit/Tests/CameraKitTests/LensOptionTests.swift": {
+    "dependencies": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/LensOptionTests.d",
+    "object": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/LensOptionTests.swift.o",
+    "swiftmodule": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/LensOptionTests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/LensOptionTests.swiftdeps"
+  },
+  "/workspace/Packages/CameraKit/Tests/CameraKitTests/MockCameraSourceTests.swift": {
+    "dependencies": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/MockCameraSourceTests.d",
+    "object": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/MockCameraSourceTests.swift.o",
+    "swiftmodule": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/MockCameraSourceTests~partial.swiftmodule",
+    "swift-dependencies": "/workspace/Packages/CameraKit/.build/x86_64-unknown-linux-gnu/debug/CameraKitTests.build/MockCameraSourceTests.swiftdeps"
+  }
+}
