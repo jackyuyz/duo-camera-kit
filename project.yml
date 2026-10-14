@@ -1,0 +1,143 @@
+name: DuoCameraKit
+options:
+  bundleIdPrefix: com.jackyu
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "27.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_IDENTITY: ""
+    CODE_SIGNING_REQUIRED: "NO"
+    CODE_SIGNING_ALLOWED: "NO"
+
+packages:
+  FoldKit:
+    path: Packages/FoldKit
+  CameraKit:
+    path: Packages/CameraKit
+  LinkKit:
+    path: Packages/LinkKit
+  StreamKit:
+    path: Packages/StreamKit
+  TripodKit:
+    path: Packages/TripodKit
+  Library:
+    path: Packages/Library
+  Store:
+    path: Packages/Store
+
+targets:
+  DuoCameraKit:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+        excludes:
+          - "**/*.xcassets"
+      - path: App/Resources
+    resources:
+      - path: App/Resources/Assets.xcassets
+      - path: App/Resources/Localizable.xcstrings
+      - path: App/Resources/Fixtures
+      - path: App/Resources/en.lproj
+      - path: App/Resources/zh-Hans.lproj
+      - path: Configuration.storekit
+    dependencies:
+      - package: FoldKit
+      - package: CameraKit
+      - package: LinkKit
+      - package: StreamKit
+      - package: TripodKit
+      - package: Library
+      - package: Store
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Duo Camera Kit
+        CFBundleName: DuoCameraKit
+        CFBundleIdentifier: com.jackyu.duocamerakit
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen:
+          UIColorName: ""
+          UIImageName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        NSCameraUsageDescription: "Duo Camera Kit uses the camera to take photos and videos, including when this iPhone is used as a remote lens."
+        NSMicrophoneUsageDescription: "Record sound with your videos."
+        NSLocalNetworkUsageDescription: "Duo Camera Kit connects directly to your other iPhone nearby to share the camera preview and transfer photos. Nothing goes to the internet."
+        NSPhotoLibraryAddUsageDescription: "Save captures to Photos."
+        NSBonjourServices:
+          - "_duocamkit._tcp"
+          - "_duocamkit._udp"
+        UIBackgroundModes: []
+        ITSAppUsesNonExemptEncryption: false
+        LSRequiresIPhoneOS: true
+    settings:
+      base:
+        IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: true
+        INFOPLIST_KEY_UIStatusBarStyle: UIStatusBarStyleLightContent
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SWIFT_EMIT_LOC_STRINGS: true
+        ENABLE_PREVIEWS: true
+    preBuildScripts: []
+    postBuildScripts: []
+
+  DuoCameraKitTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - target: DuoCameraKit
+    settings:
+      base:
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/DuoCameraKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DuoCameraKit"
+
+  DuoCameraKitUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UITests
+    dependencies:
+      - target: DuoCameraKit
+
+schemes:
+  DuoCameraKit:
+    build:
+      targets:
+        DuoCameraKit: all
+        DuoCameraKitTests: [test]
+        DuoCameraKitUITests: [test]
+    run:
+      config: Debug
+      commandLineArguments:
+        "-FoldDebugOverlay 1": false
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - DuoCameraKitTests
+        - DuoCameraKitUITests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

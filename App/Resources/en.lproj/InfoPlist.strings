@@ -1,0 +1,5 @@
+NSCameraUsageDescription = "Duo Camera Kit uses the camera to take photos and videos, including when this iPhone is used as a remote lens.";
+NSMicrophoneUsageDescription = "Record sound with your videos.";
+NSLocalNetworkUsageDescription = "Duo Camera Kit connects directly to your other iPhone nearby to share the camera preview and transfer photos. Nothing goes to the internet.";
+NSPhotoLibraryAddUsageDescription = "Save captures to Photos.";
+CFBundleDisplayName = "Duo Camera Kit";

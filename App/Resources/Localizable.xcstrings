@@ -1,0 +1,540 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Duo Camera Kit" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Duo Camera Kit" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Duo 相机套件" } }
+      }
+    },
+    "Transform your old iPhone into a telephoto lens, or use your Duo as a tripod" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Transform your old iPhone into a telephoto lens, or use your Duo as a tripod" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "将旧 iPhone 变成长焦镜头，或将 Duo 当作三脚架使用" } }
+      }
+    },
+    "Lens" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Lens" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "镜头" } }
+      }
+    },
+    "Lens Mode" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Lens Mode" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "镜头模式" } }
+      }
+    },
+    "Remote telephoto" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Remote telephoto" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "远程长焦" } }
+      }
+    },
+    "Use your old iPhone as a telephoto camera" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Use your old iPhone as a telephoto camera" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "将旧 iPhone 当作长焦相机" } }
+      }
+    },
+    "Tripod" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tripod" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "三脚架" } }
+      }
+    },
+    "Tripod Mode" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tripod Mode" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "三脚架模式" } }
+      }
+    },
+    "Use hinge as stand" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Use hinge as stand" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "用铰链作为支架" } }
+      }
+    },
+    "Time-lapse, long exposure, and more" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Time-lapse, long exposure, and more" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "延时摄影、长曝光等" } }
+      }
+    },
+    "Device Status" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Device Status" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "设备状态" } }
+      }
+    },
+    "Quick Start" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Quick Start" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "快速开始" } }
+      }
+    },
+    "Time-lapse" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Time-lapse" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "延时摄影" } }
+      }
+    },
+    "Long Exp" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Long Exp" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "长曝光" } }
+      }
+    },
+    "Camera" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Camera" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "相机" } }
+      }
+    },
+    "Gallery" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Gallery" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "相册" } }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "设置" } }
+      }
+    },
+    "Standard iPhone" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Standard iPhone" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "标准 iPhone" } }
+      }
+    },
+    "Closed" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Closed" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已合上" } }
+      }
+    },
+    "Partially Open" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Partially Open" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "半开" } }
+      }
+    },
+    "Fully Open" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Fully Open" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "完全打开" } }
+      }
+    },
+    "Unknown" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unknown" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "未知" } }
+      }
+    },
+    "Inner Display" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Inner Display" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "内屏" } }
+      }
+    },
+    "Tent Mode" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tent Mode" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "帐篷模式" } }
+      }
+    },
+    "Cover Display" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cover Display" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "外屏" } }
+      }
+    },
+    "Standard" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Standard" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "标准" } }
+      }
+    },
+    "Connect to Lens Device" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Connect to Lens Device" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "连接镜头设备" } }
+      }
+    },
+    "Open Duo Camera Kit on your other iPhone and select 'Lens' mode" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Open Duo Camera Kit on your other iPhone and select 'Lens' mode" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "在另一台 iPhone 上打开 Duo Camera Kit 并选择"镜头"模式" } }
+      }
+    },
+    "Enter Pairing Code" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Enter Pairing Code" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "输入配对码" } }
+      }
+    },
+    "Connect" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Connect" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "连接" } }
+      }
+    },
+    "Searching for nearby devices..." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Searching for nearby devices..." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "正在搜索附近设备…" } }
+      }
+    },
+    "Make sure both devices are on the same Wi-Fi network or have Wi-Fi enabled" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Make sure both devices are on the same Wi-Fi network or have Wi-Fi enabled" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "请确保两台设备在同一 Wi-Fi 网络或已开启 Wi-Fi" } }
+      }
+    },
+    "Control" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Control" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "控制" } }
+      }
+    },
+    "Zoom" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Zoom" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "变焦" } }
+      }
+    },
+    "Exposure" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Exposure" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "曝光" } }
+      }
+    },
+    "Disconnected" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Disconnected" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已断开" } }
+      }
+    },
+    "Connecting..." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Connecting..." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "连接中…" } }
+      }
+    },
+    "Connected" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Connected" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已连接" } }
+      }
+    },
+    "No Captures Yet" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No Captures Yet" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "暂无拍摄内容" } }
+      }
+    },
+    "Photos and videos you capture will appear here" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Photos and videos you capture will appear here" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "拍摄的照片和视频将显示在此处" } }
+      }
+    },
+    "Unlock All Features" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock All Features" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "解锁全部功能" } }
+      }
+    },
+    "One-time purchase. No subscription." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "One-time purchase. No subscription." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "一次购买，无需订阅。" } }
+      }
+    },
+    "One-time purchase. Works on all your devices with the same Apple Account." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "One-time purchase. Works on all your devices with the same Apple Account." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "一次购买，可在同一 Apple 账户下的所有设备上使用。" } }
+      }
+    },
+    "Stand Assistant" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stand Assistant" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "支架助手" } }
+      }
+    },
+    "Angle" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Angle" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "角度" } }
+      }
+    },
+    "Level" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Level" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "水平" } }
+      }
+    },
+    "Place on a flat surface" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Place on a flat surface" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "放置在平面上" } }
+      }
+    },
+    "Half-open your iPhone to use as a stand" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Half-open your iPhone to use as a stand" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "将 iPhone 半开作为支架使用" } }
+      }
+    },
+    "PRO" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "PRO" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "专业版" } }
+      }
+    },
+    "Stop" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stop" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "停止" } }
+      }
+    },
+    "Start %@" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Start %@" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "开始%@" } }
+      }
+    },
+    "Stand Locked" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stand Locked" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "支架已锁定" } }
+      }
+    },
+    "Unlocked" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlocked" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "未锁定" } }
+      }
+    },
+    "Lock Stand Position" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Lock Stand Position" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "锁定支架位置" } }
+      }
+    },
+    "Re-lock at Current Position" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Re-lock at Current Position" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "重新锁定到当前位置" } }
+      }
+    },
+    "Stable" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stable" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "稳定" } }
+      }
+    },
+    "Moved" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Moved" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已移动" } }
+      }
+    },
+    "Interval" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Interval" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "间隔" } }
+      }
+    },
+    "Duration" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Duration" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "时长" } }
+      }
+    },
+    "Effect" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Effect" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "效果" } }
+      }
+    },
+    "Show your palm to capture" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Show your palm to capture" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "展示手掌进行拍摄" } }
+      }
+    },
+    "Long Exposure" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Long Exposure" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "长曝光" } }
+      }
+    },
+    "Star Trails" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Star Trails" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "星轨" } }
+      }
+    },
+    "Palm Trigger" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Palm Trigger" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "手掌触发" } }
+      }
+    },
+    "Lap Cam" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Lap Cam" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "膝上拍摄" } }
+      }
+    },
+    "Top Down" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Top Down" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "俯拍" } }
+      }
+    },
+    "Mean" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Mean" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "均值" } }
+      }
+    },
+    "Lighten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Lighten" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "变亮" } }
+      }
+    },
+    "Median" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Median" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "中值" } }
+      }
+    },
+    "Hinge angle changed" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Hinge angle changed" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "铰链角度已改变" } }
+      }
+    },
+    "Device was moved" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Device was moved" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "设备已移动" } }
+      }
+    },
+    "Ready" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Ready" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "准备就绪" } }
+      }
+    },
+    "REC" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "REC" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "录制中" } }
+      }
+    },
+    "Choose Your Role" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Choose Your Role" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "选择角色" } }
+      }
+    },
+    "This Duo is the control device" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "This Duo is the control device" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "此 Duo 为控制设备" } }
+      }
+    },
+    "This iPhone is the camera" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "This iPhone is the camera" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "此 iPhone 为相机" } }
+      }
+    },
+    "Restore Purchases" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Restore Purchases" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "恢复购买" } }
+      }
+    },
+    "Diagnostics" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Diagnostics" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "诊断" } }
+      }
+    },
+    "Latency" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Latency" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "延迟" } }
+      }
+    },
+    "Bitrate" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Bitrate" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "比特率" } }
+      }
+    },
+    "Clock Offset" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Clock Offset" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "时钟偏差" } }
+      }
+    },
+    "The Lens role is always free" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The Lens role is always free" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "镜头角色始终免费" } }
+      }
+    },
+    "Unlock Camera Kit Pro" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock Camera Kit Pro" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "解锁 Camera Kit 专业版" } }
+      }
+    },
+    "Price shown by the App Store" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Price shown by the App Store" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "价格由 App Store 显示" } }
+      }
+    },
+    "Pro Unlocked" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pro Unlocked" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "专业版已解锁" } }
+      }
+    },
+    "Waiting for approval" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Waiting for approval" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "等待批准" } }
+      }
+    },
+    "Auto-return originals" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Auto-return originals" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "自动传回原片" } }
+      }
+    },
+    "This iPhone has no telephoto lens. Zoom is digital on the wide camera — still usable as a second angle." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "This iPhone has no telephoto lens. Zoom is digital on the wide camera — still usable as a second angle." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "这台 iPhone 没有长焦镜头。变焦为广角数码变焦，仍可用作第二机位。" } }
+      }
+    },
+    "Full-res, ProRAW, ProRes and auto-return require Pro" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Full-res, ProRAW, ProRes and auto-return require Pro" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "全分辨率、ProRAW、ProRes 和自动传回需要专业版" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}
