@@ -66,9 +66,9 @@ public final class MockReservedRegionProvider: ReservedRegionProvider, @unchecke
     
     public init(
         posture: FoldPosture = .fullyOpen,
-        mockDivisionWidth: CGFloat = 40.0,
-        mockDivisionSafeMargin: CGFloat = 16.0,
-        screenSize: CGSize = CGSize(width: 890, height: 626),
+        mockDivisionWidth: CGFloat = ReservedRegionDefaults.mockDivisionWidth,
+        mockDivisionSafeMargin: CGFloat = ReservedRegionDefaults.divisionSafeMargin,
+        screenSize: CGSize = ReservedRegionDefaults.thirdPartyInnerScreenSize,
         mockOcclusionRegions: [ReservedRegion] = []
     ) {
         self.posture = posture
@@ -129,4 +129,16 @@ public enum ReservedRegionDefaults {
     /// Default camera occlusion height on inner display
     /// ASSUMPTION: Based on iPhone Pro Dynamic Island
     public static let innerCameraHeight: CGFloat = 32.0
+    
+    // MARK: - Third-Party Reported Screen Sizes (for mocks only)
+    // Source: Third-party analysis. Use runtime UIScreen.main.bounds in production.
+    // Inner renders @3x as 2853×2007 pixels → 951×669pt landscape
+    
+    /// Third-party reported inner display size in points (landscape)
+    /// THIRD-PARTY VALUE: Use runtime bounds instead
+    public static let thirdPartyInnerScreenSize = CGSize(width: 951, height: 669)
+    
+    /// Third-party reported outer display size in points (portrait)
+    /// THIRD-PARTY VALUE: Use runtime bounds instead
+    public static let thirdPartyOuterScreenSize = CGSize(width: 466, height: 678)
 }

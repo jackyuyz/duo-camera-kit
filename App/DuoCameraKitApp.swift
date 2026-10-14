@@ -19,6 +19,9 @@ struct DuoCameraKitApp: App {
                 .preferredColorScheme(.dark)
                 .onAppear {
                     configureMockStateFromLaunchArguments()
+                    #if DEBUG
+                    logRuntimeDisplayInfo()
+                    #endif
                 }
         }
     }

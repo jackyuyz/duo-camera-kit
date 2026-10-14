@@ -1,32 +1,35 @@
 import SwiftUI
 import FoldKit
+import os.log
 
 /// Layout constants for iPhone Duo displays
 ///
 /// Display specifications based on public research (not yet Apple-doc-confirmed):
-/// - Outer display: 5.4" portrait, 1398×2034 px
-/// - Inner display: 7.6" unfolded landscape, 2670×1878 px
+/// - Outer display: 5.4" portrait, 1398×2034 px (panel), renders @3x then downsamples
+/// - Inner display: 7.6" unfolded landscape, 2670×1878 px (panel), renders @3x as 2007×2853 then downsamples
 ///
-/// Scale factor and point sizes are ASSUMPTIONS pending device confirmation.
-/// Fold region dimensions come from runtime `reservedRegions(kind: .division)` - NOT hardcoded.
+/// **Important:** Do NOT derive point sizes from panel pixels / 3.
+/// The inner screen renders at @3x (like old Plus models) then downsamples to the panel.
+/// Use runtime `UIScreen.main.bounds` and `UIScreen.main.scale` for actual values.
+/// Third-party reported point sizes are kept as mock/default values only.
 public enum DuoDisplay {
     
-    // MARK: - Researched Values (public, not Apple-doc-confirmed)
+    // MARK: - Panel Pixel Dimensions (public research, not Apple-doc-confirmed)
     
-    /// Inner display pixel dimensions (landscape orientation, unfolded)
-    public static let innerPixelWidth: CGFloat = 2670
-    public static let innerPixelHeight: CGFloat = 1878
+    /// Inner display panel pixels (landscape orientation, unfolded)
+    /// Note: Rendering resolution is different (2007×2853 @3x, downsampled to panel)
+    public static let innerPanelPixelWidth: CGFloat = 2670
+    public static let innerPanelPixelHeight: CGFloat = 1878
     
-    /// Outer display pixel dimensions (portrait orientation)
-    public static let outerPixelWidth: CGFloat = 1398
-    public static let outerPixelHeight: CGFloat = 2034
+    /// Outer display panel pixels (portrait orientation)
+    public static let outerPanelPixelWidth: CGFloat = 1398
+    public static let outerPanelPixelHeight: CGFloat = 2034
     
-    /// Inner display aspect ratio: 2670/1878 ≈ 1.4217 (wider than tall in landscape)
-    /// This is NOT 4:3; the inner display is landscape-oriented when unfolded
-    public static let innerAspectRatio: CGFloat = innerPixelWidth / innerPixelHeight  // ~1.42:1
+    /// Inner display aspect ratio from panel pixels
+    public static let innerAspectRatio: CGFloat = innerPanelPixelWidth / innerPanelPixelHeight  // ~1.42:1
     
-    /// Outer display aspect ratio: 1398/2034 ≈ 0.6874 (~1:1.455 portrait)
-    public static let outerAspectRatio: CGFloat = outerPixelWidth / outerPixelHeight  // ~0.69:1
+    /// Outer display aspect ratio from panel pixels
+    public static let outerAspectRatio: CGFloat = outerPanelPixelWidth / outerPanelPixelHeight  // ~0.69:1
     
     /// Inner display diagonal (inches)
     public static let innerDiagonalInches: CGFloat = 7.6
@@ -34,26 +37,114 @@ public enum DuoDisplay {
     /// Outer display diagonal (inches)
     public static let outerDiagonalInches: CGFloat = 5.4
     
-    // MARK: - Assumptions (pending device confirmation)
+    // MARK: - Third-Party Reported Point Sizes (for mocks/defaults only)
+    // Source: Third-party analysis. Use runtime values in production.
+    // Inner renders @3x as 2853×2007 pixels → 951×669pt landscape
+    // Do NOT use panel pixels / 3 to derive these!
     
-    /// Assumed scale factor (3x like iPhone Pro Max)
-    /// ASSUMPTION: Not confirmed for Duo
-    public static let assumedScaleFactor: CGFloat = 3.0
+    /// Third-party reported inner display point size (landscape)
+    /// THIRD-PARTY VALUE: Use runtime UIScreen.main.bounds instead
+    public static let thirdPartyInnerPointWidth: CGFloat = 951
+    public static let thirdPartyInnerPointHeight: CGFloat = 669
     
-    /// Assumed inner display point dimensions (pixels / scale)
-    /// ASSUMPTION: Based on 3x scale factor
-    public static let innerPointWidth: CGFloat = innerPixelWidth / assumedScaleFactor   // 890pt
-    public static let innerPointHeight: CGFloat = innerPixelHeight / assumedScaleFactor // 626pt
-    
-    /// Assumed outer display point dimensions (pixels / scale)
-    /// ASSUMPTION: Based on 3x scale factor
-    public static let outerPointWidth: CGFloat = outerPixelWidth / assumedScaleFactor   // 466pt
-    public static let outerPointHeight: CGFloat = outerPixelHeight / assumedScaleFactor // 678pt
+    /// Third-party reported outer display point size (portrait)
+    /// THIRD-PARTY VALUE: Use runtime UIScreen.main.bounds instead
+    public static let thirdPartyOuterPointWidth: CGFloat = 466
+    public static let thirdPartyOuterPointHeight: CGFloat = 678
     
     /// Camera occlusion region height on inner display (punch-hole/Dynamic Island)
     /// ASSUMPTION: Estimated based on iPhone Pro
     public static let innerCameraHeight: CGFloat = 32.0
 }
+
+/// Runtime display information read from UIScreen
+/// Use this instead of hardcoded constants
+public struct RuntimeDisplayInfo: CustomStringConvertible, Sendable {
+    /// Screen bounds in points
+    public let bounds: CGRect
+    
+    /// Display scale factor (@1x, @2x, @3x)
+    public let scale: CGFloat
+    
+    /// Native bounds in pixels
+    public let nativeBounds: CGRect
+    
+    /// Native scale
+    public let nativeScale: CGFloat
+    
+    public var description: String {
+        "RuntimeDisplayInfo(bounds: \(bounds.width)×\(bounds.height)pt, scale: \(scale)x, native: \(nativeBounds.width)×\(nativeBounds.height)px, nativeScale: \(nativeScale)x)"
+    }
+    
+    /// Mock info using third-party inner display values (landscape)
+    public static let mockInner = RuntimeDisplayInfo(
+        bounds: CGRect(x: 0, y: 0, width: DuoDisplay.thirdPartyInnerPointWidth, height: DuoDisplay.thirdPartyInnerPointHeight),
+        scale: 3.0,
+        nativeBounds: CGRect(x: 0, y: 0, width: 2853, height: 2007),
+        nativeScale: 3.0
+    )
+    
+    /// Mock info using third-party outer display values (portrait)
+    public static let mockOuter = RuntimeDisplayInfo(
+        bounds: CGRect(x: 0, y: 0, width: DuoDisplay.thirdPartyOuterPointWidth, height: DuoDisplay.thirdPartyOuterPointHeight),
+        scale: 3.0,
+        nativeBounds: CGRect(x: 0, y: 0, width: DuoDisplay.outerPanelPixelWidth, height: DuoDisplay.outerPanelPixelHeight),
+        nativeScale: 3.0
+    )
+}
+
+#if canImport(UIKit)
+import UIKit
+
+extension RuntimeDisplayInfo {
+    /// Read current display info from UIScreen.main
+    @MainActor
+    public static func current() -> RuntimeDisplayInfo {
+        let screen = UIScreen.main
+        return RuntimeDisplayInfo(
+            bounds: screen.bounds,
+            scale: screen.scale,
+            nativeBounds: screen.nativeBounds,
+            nativeScale: screen.nativeScale
+        )
+    }
+}
+
+/// Logger for display diagnostics
+private let displayLogger = Logger(subsystem: "com.duocamerakit", category: "Display")
+
+/// Log current runtime display values for debugging
+/// Call this on app launch to verify display dimensions in simulator/device
+@MainActor
+public func logRuntimeDisplayInfo() {
+    let info = RuntimeDisplayInfo.current()
+    displayLogger.info("📱 Runtime Display Info: \(info.description)")
+    displayLogger.info("  bounds: \(info.bounds.width, privacy: .public)×\(info.bounds.height, privacy: .public)pt")
+    displayLogger.info("  scale: \(info.scale, privacy: .public)x")
+    displayLogger.info("  nativeBounds: \(info.nativeBounds.width, privacy: .public)×\(info.nativeBounds.height, privacy: .public)px")
+    displayLogger.info("  nativeScale: \(info.nativeScale, privacy: .public)x")
+    
+    #if DEBUG
+    print("🖥️ [DuoDisplay] Runtime Display Info:")
+    print("   bounds: \(info.bounds.width)×\(info.bounds.height)pt")
+    print("   scale: \(info.scale)x")
+    print("   nativeBounds: \(info.nativeBounds.width)×\(info.nativeBounds.height)px")
+    print("   nativeScale: \(info.nativeScale)x")
+    print("   Third-party inner (expected): \(DuoDisplay.thirdPartyInnerPointWidth)×\(DuoDisplay.thirdPartyInnerPointHeight)pt")
+    print("   Third-party outer (expected): \(DuoDisplay.thirdPartyOuterPointWidth)×\(DuoDisplay.thirdPartyOuterPointHeight)pt")
+    #endif
+}
+#else
+/// Stub for non-UIKit platforms (Linux testing)
+public func logRuntimeDisplayInfo() {
+    #if DEBUG
+    print("🖥️ [DuoDisplay] Runtime display info unavailable (no UIKit)")
+    print("   Using third-party values for mocks:")
+    print("   Inner: \(DuoDisplay.thirdPartyInnerPointWidth)×\(DuoDisplay.thirdPartyInnerPointHeight)pt")
+    print("   Outer: \(DuoDisplay.thirdPartyOuterPointWidth)×\(DuoDisplay.thirdPartyOuterPointHeight)pt")
+    #endif
+}
+#endif
 
 /// Runtime fold region information from system reservedRegions API
 /// The fold region exists only when half-folded and has 0 width when fully unfolded

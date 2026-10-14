@@ -153,4 +153,12 @@ struct ReservedRegionDefaultsTests {
         #expect(ReservedRegionDefaults.divisionSafeMargin == 16.0)
         #expect(ReservedRegionDefaults.innerCameraHeight == 32.0)
     }
+    
+    @Test("Third-party screen sizes")
+    func thirdPartyScreenSizes() {
+        #expect(ReservedRegionDefaults.thirdPartyInnerScreenSize.width == 951)
+        #expect(ReservedRegionDefaults.thirdPartyInnerScreenSize.height == 669)
+        #expect(ReservedRegionDefaults.thirdPartyOuterScreenSize.width == 466)
+        #expect(ReservedRegionDefaults.thirdPartyOuterScreenSize.height == 678)
+    }
 }
