@@ -8,6 +8,7 @@ struct TripodCaptureView: View {
     @Environment(\.foldStateProvider) private var foldStateProvider
     @Environment(\.displayContext) private var displayContext
     @Environment(\.hingeAngle) private var hingeAngle
+    @Environment(\.foldRegionInfo) private var foldRegionInfo
     
     @State private var isCapturing = false
     @State private var framesCaptured = 0
@@ -116,14 +117,17 @@ struct TripodCaptureView: View {
     /// Best tripod layout: preview on upper half, controls on lower half
     private var tentModeLayout: some View {
         GeometryReader { geometry in
-            let halfHeight = (geometry.size.height - DuoDisplay.foldRegionWidth) / 2
+            let foldWidth = foldRegionInfo.width
+            let halfHeight = (geometry.size.height - foldWidth) / 2
             
             VStack(spacing: 0) {
                 tentPreviewArea
                     .frame(height: halfHeight)
                 
-                Spacer()
-                    .frame(height: DuoDisplay.foldRegionWidth)
+                if foldWidth > 0 {
+                    Spacer()
+                        .frame(height: foldWidth)
+                }
                 
                 tentControlsArea
                     .frame(height: halfHeight)

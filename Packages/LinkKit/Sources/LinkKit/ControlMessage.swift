@@ -2,7 +2,7 @@ import Foundation
 import CameraKit
 
 /// Messages sent between Control and Lens devices
-public enum ControlMessage: Codable, Sendable, Equatable {
+public enum ControlMessage: Codable, Sendable {
     /// Initial handshake with peer info
     case hello(PeerInfo)
     
@@ -59,6 +59,18 @@ public enum ControlMessage: Codable, Sendable, Equatable {
     
     /// Goodbye message before disconnecting
     case goodbye
+    
+    /// File transfer request
+    case fileTransferRequest(TransferRequest)
+    
+    /// File transfer data chunk
+    case fileTransferChunk(TransferChunk)
+    
+    /// Transfer completed acknowledgment
+    case transferComplete(UUID)
+    
+    /// Transfer cancelled
+    case transferCancelled(UUID)
 }
 
 /// Protocol version for compatibility checking

@@ -4,6 +4,7 @@ import FoldKit
 struct HomeView: View {
     @Environment(\.foldStateProvider) private var foldStateProvider
     @Environment(\.displayContext) private var displayContext
+    @Environment(\.foldRegionInfo) private var foldRegionInfo
     @State private var showSettings = false
     
     var body: some View {
@@ -39,9 +40,13 @@ struct HomeView: View {
     // MARK: - Flat Layout (Fully Open)
     
     /// Side-by-side cards on the inner display
+    /// When fully open, fold region width is 0 so no avoidance needed
     private var flatLayout: some View {
         GeometryReader { geometry in
-            let halfWidth = (geometry.size.width - DuoDisplay.foldRegionWidth - DuoDisplay.foldSafeMargin * 2) / 2
+            let foldWidth = foldRegionInfo.width
+            let safeMargin = foldRegionInfo.safeMargin
+            let totalFoldSpace = foldWidth > 0 ? foldWidth + safeMargin * 2 : 0
+            let halfWidth = (geometry.size.width - totalFoldSpace) / 2
             
             HStack(spacing: 0) {
                 VStack(spacing: 16) {
@@ -63,10 +68,12 @@ struct HomeView: View {
                     foldStateCard
                 }
                 .frame(width: halfWidth)
-                .padding(.trailing, DuoDisplay.foldSafeMargin)
+                .padding(.trailing, foldWidth > 0 ? safeMargin : 0)
                 
-                Spacer()
-                    .frame(width: DuoDisplay.foldRegionWidth)
+                if foldWidth > 0 {
+                    Spacer()
+                        .frame(width: foldWidth)
+                }
                 
                 VStack(spacing: 16) {
                     Spacer()
@@ -88,7 +95,7 @@ struct HomeView: View {
                     quickActionsCard
                 }
                 .frame(width: halfWidth)
-                .padding(.leading, DuoDisplay.foldSafeMargin)
+                .padding(.leading, foldWidth > 0 ? safeMargin : 0)
             }
             .padding()
         }
@@ -98,7 +105,8 @@ struct HomeView: View {
     
     private var tentLayout: some View {
         GeometryReader { geometry in
-            let halfHeight = (geometry.size.height - DuoDisplay.foldRegionWidth) / 2
+            let foldWidth = foldRegionInfo.width
+            let halfHeight = (geometry.size.height - foldWidth) / 2
             
             VStack(spacing: 0) {
                 ScrollView {
@@ -110,8 +118,10 @@ struct HomeView: View {
                 }
                 .frame(height: halfHeight)
                 
-                Spacer()
-                    .frame(height: DuoDisplay.foldRegionWidth)
+                if foldWidth > 0 {
+                    Spacer()
+                        .frame(height: foldWidth)
+                }
                 
                 VStack(spacing: 16) {
                     foldStateCard

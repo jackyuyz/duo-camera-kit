@@ -7,7 +7,8 @@ import FoldKit
 /// - Outer display: 5.4" portrait, 1398×2034 px
 /// - Inner display: 7.6" unfolded landscape, 2670×1878 px
 ///
-/// Scale factor, point sizes, and crease dimensions are ASSUMPTIONS pending device confirmation.
+/// Scale factor and point sizes are ASSUMPTIONS pending device confirmation.
+/// Fold region dimensions come from runtime `reservedRegions(kind: .division)` - NOT hardcoded.
 public enum DuoDisplay {
     
     // MARK: - Researched Values (public, not Apple-doc-confirmed)
@@ -49,17 +50,38 @@ public enum DuoDisplay {
     public static let outerPointWidth: CGFloat = outerPixelWidth / assumedScaleFactor   // 466pt
     public static let outerPointHeight: CGFloat = outerPixelHeight / assumedScaleFactor // 678pt
     
-    /// Approximate width of the fold/crease region in points
-    /// ASSUMPTION: Estimated based on typical foldable displays
-    public static let foldRegionWidth: CGFloat = 8.0
-    
-    /// Safe margin from the fold region (content should not overlap)
-    /// ASSUMPTION: Estimated for comfortable viewing
-    public static let foldSafeMargin: CGFloat = 16.0
-    
     /// Camera occlusion region height on inner display (punch-hole/Dynamic Island)
     /// ASSUMPTION: Estimated based on iPhone Pro
     public static let innerCameraHeight: CGFloat = 32.0
+}
+
+/// Runtime fold region information from system reservedRegions API
+/// The fold region exists only when half-folded and has 0 width when fully unfolded
+public struct FoldRegionInfo: Equatable {
+    /// Width of the fold/crease region (0 when fully open or closed)
+    public var width: CGFloat
+    
+    /// Safe margin from the fold region
+    public var safeMargin: CGFloat
+    
+    /// Total width including safe margins on both sides
+    public var totalAvoidanceWidth: CGFloat {
+        width > 0 ? width + safeMargin * 2 : 0
+    }
+    
+    public init(width: CGFloat = 0, safeMargin: CGFloat = ReservedRegionDefaults.divisionSafeMargin) {
+        self.width = width
+        self.safeMargin = safeMargin
+    }
+    
+    /// Default for when no fold region is present
+    public static let none = FoldRegionInfo(width: 0, safeMargin: 0)
+    
+    /// Mock value for testing (~40pt when half-folded)
+    public static let mockPartiallyOpen = FoldRegionInfo(
+        width: ReservedRegionDefaults.mockDivisionWidth,
+        safeMargin: ReservedRegionDefaults.divisionSafeMargin
+    )
 }
 
 /// Describes the current display context
@@ -109,9 +131,20 @@ public func displayContext(from foldState: FoldState) -> DisplayContext {
 /// View modifier that adapts layout for Duo displays
 struct DuoLayoutModifier: ViewModifier {
     let foldState: FoldState
+    let reservedRegionProvider: (any ReservedRegionProvider)?
     
     var context: DisplayContext {
         displayContext(from: foldState)
+    }
+    
+    var foldRegionInfo: FoldRegionInfo {
+        guard let provider = reservedRegionProvider else {
+            return foldRegionForPosture(foldState.posture)
+        }
+        return FoldRegionInfo(
+            width: provider.divisionWidth,
+            safeMargin: provider.divisionSafeMargin
+        )
     }
     
     func body(content: Content) -> some View {
@@ -119,13 +152,29 @@ struct DuoLayoutModifier: ViewModifier {
             .environment(\.displayContext, context)
             .environment(\.foldPosture, foldState.posture)
             .environment(\.hingeAngle, foldState.angleDegrees)
+            .environment(\.foldRegionInfo, foldRegionInfo)
+    }
+}
+
+/// Determine fold region info based on posture (for mocking without a provider)
+func foldRegionForPosture(_ posture: FoldPosture) -> FoldRegionInfo {
+    switch posture {
+    case .partiallyOpen:
+        return .mockPartiallyOpen
+    default:
+        return .none
     }
 }
 
 extension View {
     /// Apply Duo-aware layout based on fold state
     func duoLayout(foldState: FoldState) -> some View {
-        modifier(DuoLayoutModifier(foldState: foldState))
+        modifier(DuoLayoutModifier(foldState: foldState, reservedRegionProvider: nil))
+    }
+    
+    /// Apply Duo-aware layout with a reserved region provider for runtime fold region queries
+    func duoLayout(foldState: FoldState, reservedRegionProvider: (any ReservedRegionProvider)?) -> some View {
+        modifier(DuoLayoutModifier(foldState: foldState, reservedRegionProvider: reservedRegionProvider))
     }
 }
 
@@ -143,6 +192,10 @@ private struct HingeAngleKey: EnvironmentKey {
     static let defaultValue: Double? = nil
 }
 
+private struct FoldRegionInfoKey: EnvironmentKey {
+    static let defaultValue: FoldRegionInfo = .none
+}
+
 extension EnvironmentValues {
     var displayContext: DisplayContext {
         get { self[DisplayContextKey.self] }
@@ -157,5 +210,10 @@ extension EnvironmentValues {
     var hingeAngle: Double? {
         get { self[HingeAngleKey.self] }
         set { self[HingeAngleKey.self] = newValue }
+    }
+    
+    var foldRegionInfo: FoldRegionInfo {
+        get { self[FoldRegionInfoKey.self] }
+        set { self[FoldRegionInfoKey.self] = newValue }
     }
 }

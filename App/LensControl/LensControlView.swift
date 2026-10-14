@@ -6,6 +6,7 @@ import FoldKit
 struct LensControlView: View {
     @Environment(\.displayContext) private var displayContext
     @Environment(\.foldPosture) private var foldPosture
+    @Environment(\.foldRegionInfo) private var foldRegionInfo
     
     @State private var connectionState: ConnectionState = .searching
     @State private var selectedLens: LensOption?
@@ -98,14 +99,17 @@ struct LensControlView: View {
     /// Director desk mode: preview on upper half, controls on lower half
     private var tentModeLayout: some View {
         GeometryReader { geometry in
-            let halfHeight = (geometry.size.height - DuoDisplay.foldRegionWidth) / 2
+            let foldWidth = foldRegionInfo.width
+            let halfHeight = (geometry.size.height - foldWidth) / 2
             
             VStack(spacing: 0) {
                 previewArea
                     .frame(height: halfHeight)
                 
-                Spacer()
-                    .frame(height: DuoDisplay.foldRegionWidth)
+                if foldWidth > 0 {
+                    Spacer()
+                        .frame(height: foldWidth)
+                }
                 
                 tentControlsArea
                     .frame(height: halfHeight)
@@ -135,21 +139,27 @@ struct LensControlView: View {
     // MARK: - Flat Mode Layout (Fully Open)
     
     /// Split view: preview on left half, controls on right half
+    /// When fully open, fold region is 0 width so no avoidance needed
     private var flatModeLayout: some View {
         GeometryReader { geometry in
-            let halfWidth = (geometry.size.width - DuoDisplay.foldRegionWidth - DuoDisplay.foldSafeMargin * 2) / 2
+            let foldWidth = foldRegionInfo.width
+            let safeMargin = foldRegionInfo.safeMargin
+            let totalFoldSpace = foldWidth > 0 ? foldWidth + safeMargin * 2 : 0
+            let halfWidth = (geometry.size.width - totalFoldSpace) / 2
             
             HStack(spacing: 0) {
                 previewArea
                     .frame(width: halfWidth)
-                    .padding(.trailing, DuoDisplay.foldSafeMargin)
+                    .padding(.trailing, foldWidth > 0 ? safeMargin : 0)
                 
-                Spacer()
-                    .frame(width: DuoDisplay.foldRegionWidth)
+                if foldWidth > 0 {
+                    Spacer()
+                        .frame(width: foldWidth)
+                }
                 
                 flatControlsArea
                     .frame(width: halfWidth)
-                    .padding(.leading, DuoDisplay.foldSafeMargin)
+                    .padding(.leading, foldWidth > 0 ? safeMargin : 0)
             }
         }
     }
