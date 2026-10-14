@@ -6,6 +6,9 @@ struct TripodCaptureView: View {
     let mode: TripodMode
     
     @Environment(\.foldStateProvider) private var foldStateProvider
+    @Environment(\.displayContext) private var displayContext
+    @Environment(\.hingeAngle) private var hingeAngle
+    
     @State private var isCapturing = false
     @State private var framesCaptured = 0
     @State private var standAssistant = StandAssistant()
@@ -16,28 +19,166 @@ struct TripodCaptureView: View {
     @State private var exposureSeconds: Double = 10.0
     
     var body: some View {
-        ZStack {
-            Color.black.ignoresSafeArea()
-            
-            VStack(spacing: 0) {
-                previewArea
-                
-                settingsArea
-                
-                captureButton
+        Group {
+            switch displayContext {
+            case .outer:
+                outerDisplayLayout
+            case .inner(.partiallyOpen):
+                tentModeLayout
+            default:
+                standardLayout
             }
         }
+        .background(Color.black)
         .navigationTitle(mode.displayName)
         .navigationBarTitleDisplayMode(.inline)
         .onChange(of: foldStateProvider.state) { _, newState in
             standAssistant.update(foldState: newState)
+            
+            if let lock = standAssistant.lock, !standAssistant.isStable {
+                if isCapturing {
+                    isCapturing = false
+                }
+            }
+        }
+    }
+    
+    // MARK: - Outer Display (Closed, using as tripod in a stand)
+    
+    private var outerDisplayLayout: some View {
+        VStack(spacing: 0) {
+            compactPreview
+            compactControls
+        }
+    }
+    
+    private var compactPreview: some View {
+        ZStack {
+            Color.gray.opacity(0.3)
+            
+            Image(systemName: "camera.viewfinder")
+                .font(.system(size: 32))
+                .foregroundStyle(.secondary)
+            
+            if isCapturing {
+                VStack {
+                    Spacer()
+                    compactProgressBar
+                }
+            }
+        }
+    }
+    
+    private var compactControls: some View {
+        VStack(spacing: 12) {
+            if isCapturing {
+                Button {
+                    isCapturing = false
+                } label: {
+                    Text("Stop")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 12)
+                        .background(.red)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+            } else {
+                Button {
+                    isCapturing = true
+                } label: {
+                    Text("Start \(mode.displayName)")
+                        .font(.headline)
+                        .foregroundStyle(.black)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 12)
+                        .background(Color.accentYellow)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+            }
+        }
+        .padding()
+    }
+    
+    private var compactProgressBar: some View {
+        HStack {
+            Text("\(framesCaptured)")
+                .font(.caption.monospaced())
+            ProgressView(value: progress)
+                .tint(.accentYellow)
+        }
+        .padding(8)
+        .background(.ultraThinMaterial)
+    }
+    
+    // MARK: - Tent Mode (Primary Tripod Mode)
+    
+    /// Best tripod layout: preview on upper half, controls on lower half
+    private var tentModeLayout: some View {
+        GeometryReader { geometry in
+            let halfHeight = (geometry.size.height - DuoDisplay.foldRegionWidth) / 2
+            
+            VStack(spacing: 0) {
+                tentPreviewArea
+                    .frame(height: halfHeight)
+                
+                Spacer()
+                    .frame(height: DuoDisplay.foldRegionWidth)
+                
+                tentControlsArea
+                    .frame(height: halfHeight)
+            }
+        }
+    }
+    
+    private var tentPreviewArea: some View {
+        ZStack {
+            Color.gray.opacity(0.3)
+            
+            Image(systemName: "camera.viewfinder")
+                .font(.system(size: 48))
+                .foregroundStyle(.secondary)
+            
+            VStack {
+                Spacer()
+                
+                if isCapturing {
+                    captureProgressBar
+                }
+                
+                standStatusBar
+            }
+        }
+    }
+    
+    private var tentControlsArea: some View {
+        VStack(spacing: 16) {
+            standAssistantView
+            
+            modeSpecificSettings
+            
+            Spacer()
+            
+            captureButton
+                .padding(.bottom, 8)
+        }
+        .padding(.horizontal)
+    }
+    
+    // MARK: - Standard Layout (Fully open or non-Duo)
+    
+    private var standardLayout: some View {
+        VStack(spacing: 0) {
+            previewArea
+            settingsArea
+            captureButton
+                .padding(.vertical, 24)
         }
     }
     
     private var previewArea: some View {
         ZStack {
-            Rectangle()
-                .fill(Color.gray.opacity(0.3))
+            Color.gray.opacity(0.3)
             
             Image(systemName: "camera.viewfinder")
                 .font(.system(size: 48))
@@ -54,6 +195,56 @@ struct TripodCaptureView: View {
             }
         }
         .aspectRatio(4/3, contentMode: .fit)
+    }
+    
+    // MARK: - Shared Components
+    
+    private var standAssistantView: some View {
+        VStack(spacing: 8) {
+            HStack {
+                Image(systemName: standAssistant.isStable ? "checkmark.circle.fill" : "exclamationmark.triangle.fill")
+                    .foregroundStyle(standAssistant.isStable ? .green : .orange)
+                
+                Text(standAssistant.isStable ? "Stand Locked" : (standAssistant.instabilityReason?.displayMessage ?? "Unlocked"))
+                    .font(.subheadline)
+                
+                Spacer()
+                
+                if let angle = hingeAngle {
+                    Text(String(format: "%.0f°", angle))
+                        .font(.headline.monospaced())
+                }
+            }
+            
+            if standAssistant.lock == nil {
+                Button {
+                    standAssistant.lockStand()
+                } label: {
+                    Text("Lock Stand Position")
+                        .font(.subheadline)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 8)
+                        .background(Color.accentYellow)
+                        .foregroundStyle(.black)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+            } else if !standAssistant.isStable {
+                Button {
+                    standAssistant.relockStand()
+                } label: {
+                    Text("Re-lock at Current Position")
+                        .font(.subheadline)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 8)
+                        .background(Color.orange)
+                        .foregroundStyle(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+            }
+        }
+        .padding()
+        .background(Color.gray.opacity(0.15))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
     
     private var captureProgressBar: some View {
@@ -85,7 +276,7 @@ struct TripodCaptureView: View {
                     Circle()
                         .fill(standAssistant.isStable ? .green : .orange)
                         .frame(width: 8, height: 8)
-                    Text(standAssistant.isStable ? "Locked" : "Moved")
+                    Text(standAssistant.isStable ? "Stable" : "Moved")
                         .font(.caption)
                 }
             }
@@ -102,21 +293,26 @@ struct TripodCaptureView: View {
     }
     
     @ViewBuilder
+    private var modeSpecificSettings: some View {
+        switch mode {
+        case .timelapse:
+            timelapseSettings
+        case .longExposure:
+            longExposureSettings
+        case .starTrails:
+            starTrailsSettings
+        case .palmTrigger:
+            palmTriggerSettings
+        case .lapCam, .topDown:
+            EmptyView()
+        }
+    }
+    
+    @ViewBuilder
     private var settingsArea: some View {
         ScrollView {
             VStack(spacing: 20) {
-                switch mode {
-                case .timelapse:
-                    timelapseSettings
-                case .longExposure:
-                    longExposureSettings
-                case .starTrails:
-                    starTrailsSettings
-                case .palmTrigger:
-                    palmTriggerSettings
-                case .lapCam, .topDown:
-                    EmptyView()
-                }
+                modeSpecificSettings
             }
             .padding()
         }
@@ -124,24 +320,22 @@ struct TripodCaptureView: View {
     }
     
     private var timelapseSettings: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: 12) {
             SettingRow(title: "Interval") {
                 Picker("Interval", selection: $intervalSeconds) {
                     Text("0.5s").tag(0.5)
                     Text("1s").tag(1.0)
                     Text("2s").tag(2.0)
                     Text("5s").tag(5.0)
-                    Text("10s").tag(10.0)
                 }
                 .pickerStyle(.segmented)
             }
             
             SettingRow(title: "Duration") {
                 Picker("Duration", selection: $durationMinutes) {
-                    Text("1 min").tag(1.0)
-                    Text("5 min").tag(5.0)
-                    Text("10 min").tag(10.0)
-                    Text("30 min").tag(30.0)
+                    Text("1m").tag(1.0)
+                    Text("5m").tag(5.0)
+                    Text("10m").tag(10.0)
                     Text("∞").tag(Double.infinity)
                 }
                 .pickerStyle(.segmented)
@@ -150,11 +344,11 @@ struct TripodCaptureView: View {
     }
     
     private var longExposureSettings: some View {
-        VStack(spacing: 16) {
-            SettingRow(title: "Mode") {
+        VStack(spacing: 12) {
+            SettingRow(title: "Effect") {
                 Picker("Mode", selection: $stackingMode) {
                     ForEach(StackingMode.allCases, id: \.self) { mode in
-                        Text(mode.displayName).tag(mode)
+                        Text(mode.displayName.components(separatedBy: " ").first ?? "").tag(mode)
                     }
                 }
                 .pickerStyle(.segmented)
@@ -165,7 +359,6 @@ struct TripodCaptureView: View {
                     Text("2s").tag(2.0)
                     Text("5s").tag(5.0)
                     Text("10s").tag(10.0)
-                    Text("20s").tag(20.0)
                     Text("30s").tag(30.0)
                 }
                 .pickerStyle(.segmented)
@@ -174,16 +367,14 @@ struct TripodCaptureView: View {
     }
     
     private var starTrailsSettings: some View {
-        VStack(spacing: 16) {
-            SettingRow(title: "Duration") {
-                Picker("Duration", selection: $durationMinutes) {
-                    Text("15 min").tag(15.0)
-                    Text("30 min").tag(30.0)
-                    Text("1 hr").tag(60.0)
-                    Text("2 hr").tag(120.0)
-                }
-                .pickerStyle(.segmented)
+        SettingRow(title: "Duration") {
+            Picker("Duration", selection: $durationMinutes) {
+                Text("15m").tag(15.0)
+                Text("30m").tag(30.0)
+                Text("1h").tag(60.0)
+                Text("2h").tag(120.0)
             }
+            .pickerStyle(.segmented)
         }
     }
     
@@ -193,10 +384,9 @@ struct TripodCaptureView: View {
                 .font(.largeTitle)
                 .foregroundStyle(.orange)
             
-            Text("Show your palm to the camera to trigger capture")
+            Text("Show your palm to capture")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
         }
         .padding()
     }
@@ -207,7 +397,9 @@ struct TripodCaptureView: View {
                 isCapturing = false
             } else {
                 isCapturing = true
-                standAssistant.lockStand()
+                if standAssistant.lock == nil {
+                    standAssistant.lockStand()
+                }
             }
         } label: {
             ZStack {
@@ -226,7 +418,6 @@ struct TripodCaptureView: View {
                 }
             }
         }
-        .padding(.vertical, 24)
     }
     
     private var progress: Double {
@@ -244,22 +435,17 @@ struct TripodCaptureView: View {
     }
 }
 
-struct SettingRow<Content: View>: View {
-    let title: String
-    @ViewBuilder let content: () -> Content
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(title)
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-            content()
-        }
+#Preview("Tent Mode") {
+    NavigationStack {
+        TripodCaptureView(mode: .timelapse)
+            .environment(\.displayContext, .inner(.partiallyOpen))
+            .environment(\.hingeAngle, 110.0)
     }
 }
 
-#Preview {
+#Preview("Standard") {
     NavigationStack {
         TripodCaptureView(mode: .timelapse)
+            .environment(\.displayContext, .standard)
     }
 }

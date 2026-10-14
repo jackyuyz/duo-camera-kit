@@ -15,10 +15,36 @@ struct DuoCameraKitApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.foldStateProvider, foldStateProvider)
+                .duoLayout(foldState: foldStateProvider.state)
                 .preferredColorScheme(.dark)
+                .onAppear {
+                    configureMockStateFromLaunchArguments()
+                }
+        }
+    }
+    
+    /// Configure mock fold state from launch arguments for testing
+    private func configureMockStateFromLaunchArguments() {
+        if let mockConfig = shouldUseMockFoldState() {
+            switch mockConfig {
+            case .fixed(let posture, let angle):
+                foldStateProvider.set(posture, angle: angle)
+            case .sweep(let from, let to, let duration):
+                Task {
+                    await foldStateProvider.sweep(from: from, to: to, duration: duration)
+                }
+            case .script:
+                break
+            }
+        } else {
+            #if DEBUG
+            foldStateProvider.set(.partiallyOpen, angle: 110)
+            #endif
         }
     }
 }
+
+// MARK: - Environment Keys
 
 private struct FoldStateProviderKey: EnvironmentKey {
     static let defaultValue: any FoldStateProvider = MockFoldStateProvider()
