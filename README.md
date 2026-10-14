@@ -123,6 +123,26 @@ All packages build and pass tests on Linux:
 - Privacy manifest
 - Localization setup
 
+## Duo Display Specifications
+
+Based on PM research (public, not yet Apple-doc-confirmed):
+
+| Display | Diagonal | Pixels | Aspect Ratio |
+|---------|----------|--------|--------------|
+| **Outer** (cover) | 5.4" | 1398×2034 px | ~1:1.455 (portrait) |
+| **Inner** (unfolded) | 7.6" | 2670×1878 px | ~1.42:1 (landscape) |
+
+**Note:** The inner display is landscape-oriented when unfolded, wider than tall (~1.42:1), NOT near-square or 4:3.
+
+### Assumptions (Pending Device Confirmation)
+
+The following values in `DuoDisplay` are assumptions marked in code:
+- **Scale factor**: Assumed 3x (like iPhone Pro Max)
+- **Point dimensions**: Derived from assumed scale (inner: 890×626pt, outer: 466×678pt)
+- **Fold region width**: 8pt (estimated)
+- **Fold safe margin**: 16pt (estimated)
+- **Camera cutout height**: 32pt (estimated)
+
 ## Open Questions / Unverified APIs
 
 The following APIs are marked in the spec as unverified and are behind protocols with mocks. Verify on real hardware before release:
@@ -154,6 +174,11 @@ The following APIs are marked in the spec as unverified and are behind protocols
 
 7. **StoreKit Family Sharing**
    - Verify entitlement sharing across devices with same Apple Account
+
+8. **Display Specifications**
+   - Scale factor not confirmed (assumed 3x)
+   - Exact crease width in points unknown
+   - Safe insets around fold need device testing
 
 ## Architecture Decisions
 
